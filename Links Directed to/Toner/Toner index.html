@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUINEA+LAB</title>
+    <!-- Add any additional meta tags, stylesheets, or scripts here -->
+    <link rel="stylesheet" href="Toner style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+
+    <script src="Toner script.js"></script>
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="#search" class="search-link">
+            <span class="icon">&#128269;</span>
+            <input type="text" placeholder="SEARCH..." class="search-input">
+        </a>
+        <a href="#skincare">SKINCARE</a>
+        <a href="#brands">BRANDS</a>
+        <a href="#guinea+lab">GUINEA+LAB</a>
+        <a href="#aboutUs">ABOUT US</a>
+        <a href="#games">GAMES</a>
+        <a href="#contactUs">CONTACT US</a>
+
+        <button class="login-button" id="loginBtn" onclick="toggleModal('signupModal')">
+            <span class="icon">&#128100;</span>
+            <span class="login-text">
+                LOGIN /<br> REGISTER
+            </span>
+        </button>
+
+        <!-- Shopping Cart Icon -->
+        <a href="#shoppingCart" class="cart-link">
+            <i style="font-size: 15px;" class="fa">&#xf07a;</i>
+        </a>
+    </div>
+
+    <!----------- Product 1 ----------->
+    <div class="product1-container">
+        <img src="Images/Anua-Toner.jpg" alt="Anua Soothing Toner">
+        <div class="product1-text-container">
+            <p id="product1-brand">Anua</p>
+            <p id="product1-name">Anua Heartleaf 77% Soothing Toner</p>
+            <p id="product1-price">$38.25&emsp;500ml</p>
+        </div>
+
+        <div class="product1-add-to-cart-container">
+            <p id="product1-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+        </div>        
+    </div>
+
+    <!----------- Product 2 ----------->
+    <div class="product2-container">
+        <img src="Images/Anua-Peach-Toner.jpg" alt="Anua Peach Toner">
+        <div class="product2-text-container">
+            <p id="product2-brand">Anua</p>
+            <p id="product2-name">Anua Peach 77% Niacin Essence Toner</p>
+            <p id="product2-price">$38.62&emsp;250ml</p>
+        </div>
+
+        <div class="product2-add-to-cart-container">
+            <p id="product2-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+        </div> 
+    </div>
+
+    <!----------- Product 3 ----------->
+    <div class="product3-container">
+        <img src="Images/Glow-Recipe-Toner.jpg" alt="Glow Recipe Toner">
+        <div class="product3-text-container">
+            <p id="product3-brand">Glow Recipe</p>
+            <p id="product3-name">Glow Recipe Watermelon Glow PHA + BHA Pore-Tight Toner</p>
+            <p id="product3-price">$54.00&emsp;150ml</p>
+        </div>
+
+        <div class="product3-add-to-cart-container">
+            <p id="product3-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+        </div> 
+    </div>
+
+    <!----------- Product 4 ----------->
+    <div class="product4-container">
+        <img src="Images/Laneige-Toner.jpg" alt="Laneige Toner">
+        <div class="product4-text-container">
+            <p id="product4-brand">Laniege</p>
+            <p id="product4-name">Laneige Cream Skin Cerapeptide Toner and Moisturiser</p>
+            <p id="product4-price">$49.00&emsp;170ml</p>
+        </div>
+
+        <div class="product4-add-to-cart-container">
+            <p id="product4-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+        </div> 
+    </div>
+
+    <!----------- Product 5 ----------->
+    <div class="product5-container">
+        <img src="Images/Medicube-Zero-Pore-Pad-Toner.jpg" alt="Medicube Zero Pore Pad Toner">
+        <div class="product5-text-container">
+            <p id="product5-brand">Medicube</p>
+            <p id="product5-name">Zero Pore Pad Toner 2.0</p>
+            <p id="product5-price">$31.50&emsp;100ml</p>
+        </div>
+
+        <div class="product5-add-to-cart-container">
+            <p id="product5-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+        </div> 
+    </div>
+
+    <!----------- Product 6 ----------->
+    <div class="product6-container">
+        <img src="Images/Medicube-Red-Toner.jpg" alt="Medicube Red Toner">
+        <div class="product6-text-container">
+            <p id="product6-brand">Medicube</p>
+            <p id="product6-name">Red Toner 2.0</p>
+            <p id="product6-price">$31.50&emsp;100ml</p>
+        </div>
+
+        <div class="product6-add-to-cart-container">
+            <p id="product6-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+        </div> 
+    </div>
+
+    <!----------- Product 7 ----------->
+    <div class="product7-container">
+        <img src="Images/Medicube-Triple-Collagen-Toner.jpg" alt="Medicube Triple Collagen Toner">
+        <div class="product7-text-container">
+            <p id="product7-brand">Medicube</p>
+            <p id="product7-name">Triple Collagen Toner 2.0</p>
+            <p id="product7-price">$38.50&emsp;140ml</p>
+        </div>
+
+        <div class="product7-add-to-cart-container">
+            <p id="product7-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+        </div> 
+    </div>
+
+    <!----------- Product 8 ----------->
+    <div class="product8-container">
+        <img src="Images/La-Roche-Posay-Acne-Toner.jpg" alt="Medicube Triple Collagen Toner">
+        <div class="product8-text-container">
+            <p id="product8-brand">La Roche Posay</p>
+            <p id="product8-name">Effaclar Clarifying Solution Acne Toner</p>
+            <p id="product8-price">$33.04&emsp;200ml</p>
+        </div>
+
+        <div class="product8-add-to-cart-container">
+            <p id="product8-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+        </div> 
+    </div>
+
+    <!----------- Product 9 ----------->
+    <div class="product9-container">
+        <img src="Images/The-Ordinary-Toner.jpg" alt="The Ordinary Exfoliating Toner">
+        <div class="product9-text-container">
+            <p id="product9-brand">The Ordinary</p>
+            <p id="product9-name">The Ordinary Glycolic Acid 7% Toning Solution</p>
+            <p id="product9-price">$25.00&emsp;240ml</p>
+        </div>
+
+        <div class="product9-add-to-cart-container">
+            <p id="product9-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+        </div> 
+    </div>
+
+    <!-- Include the Lottie player script -->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <!-- Your cart modal with the Lottie player -->
+    <div class="cartModal" id="cartModal">
+        <div class="cart-modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <dotlottie-player src="https://lottie.host/2f9349b7-0772-4a3c-a6cc-043e77e4faf9/pY9ZqM4ae0.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></dotlottie-player>
+            <div class="text-container">
+                <p>Added to cart!</p>
+            </div>  
+        </div>
+    </div>
+
+
+
+    <div id="signupModal" class="modal">
+        <span onclick="document.getElementById('signupModal').style.display='none'" class="close" title="Exit Form">&times;</span>
+        <form class="modal-content">
+            <div class="container">
+                <h1>Welcome to GUINEA+LAB</h1>
+                <p>Sign in or register with your social media account.</p>
+                <hr>
+    
+                <!-- Social Media Login Buttons -->
+                <div class="social-login">
+                    <a href="#" class="fb btn">
+                        <i class="fa fa-facebook fa-fw"></i> Continue with Facebook
+                    </a>
+                    <a href="#" class="twitter btn">
+                        <i class="fa fa-twitter fa-fw"></i> Continue with Twitter
+                    </a>
+                    <a href="#" class="google btn">
+                        <i class="fa fa-google fa-fw"></i> Continue with Google+
+                    </a>
+                </div>
+    
+                <!-- Or Separator -->
+                <div class="vl">
+                    <div class="vl-innertext">OR</div>
+                </div>
+    
+                <!-- Email/Password Form -->
+                <div class="form-container">
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                </div>
+    
+                <p>By creating an account you agree to our <a href="https://help.shopee.sg/portal/article/77149" target="_blank" style="color: dodgerblue">Terms & Privacy</a>.</p>
+    
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('signupModal').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">SIGN UP</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
