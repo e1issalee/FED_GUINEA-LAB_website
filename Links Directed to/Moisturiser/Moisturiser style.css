@@ -123,6 +123,70 @@ body {
     margin-top: 5px; 
 }
 
+
+/* ------------------------- Product 1 ------------------------- */
+.product1-container {
+    position: relative;
+    margin-top: 150px;
+    margin-left: 107px;
+}
+
+.product1-container img {
+    width: 220px; 
+    height: 275px; 
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.product1-text-container {
+    position: absolute;
+    width: 210px;
+    margin-top: 5px;
+    margin-left: 13px;
+    font-size: 14px;
+    text-align: left;
+}
+
+#product1-brand {
+    margin: 0;
+    font-weight: bold;
+}
+
+#product1-name {
+    margin: 0;
+    font-weight: lighter;
+}
+
+#product1-price {
+    margin: 0;
+    font-weight: bold;
+}
+
+.product1-add-to-cart-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    z-index: 2;
+    margin-top: 113px;
+    margin-left: -596px;
+    width: 220px;
+
+}
+
+#product1-add-to-cart-text {
+    background-color: rgba(0, 0, 0, 0.373);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.product1-container:hover .product1-add-to-cart-container {
+    visibility: visible;
+}
+
+
 /* -------------------------- Modal Styles --------------------------*/
 .modal {
     display: none; /* Hide the modal by default */
