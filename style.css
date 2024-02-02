@@ -211,7 +211,6 @@ body {
 }
 
 /* -------------------------- Range of Products Container --------------------------*/
-
 .rangeOfProducts-container {
     position: relative; /* Ensure proper positioning for absolute positioning within */
     text-align: center;
@@ -253,6 +252,9 @@ body {
     margin-top: 2.5px;
 }
 
+.toner-image-container:hover .toner-gray-circle {
+    background-color: rgb(255, 221, 226);
+}
 
 /* ---------- SERUM ---------- */
 .serum-image-container {
@@ -290,6 +292,9 @@ body {
     margin-top: 2.5px;
 }
 
+.serum-image-container:hover .serum-gray-circle {
+    background-color: rgb(255, 221, 226);
+}
 
 /* ---------- MOISTURISER ---------- */
 .moisturiser-image-container {
@@ -327,13 +332,17 @@ body {
     margin-top: 2.5px;
 }
 
+.moisturiser-image-container:hover .moisturiser-gray-circle {
+    background-color: rgb(255, 221, 226);
+}
 
 /* ---------- CLEANSER ---------- */
 .cleanser-image-container {
     width: 140px;
     height: 170px;
     position: absolute;
-    margin-left: 890px;
+    margin-left: 128px;
+    text-decoration: none;
 }
 
 #range-image4 {
@@ -363,13 +372,18 @@ body {
     margin-top: 2.5px;
 }
 
+.cleanser-image-container:hover .cleanser-gray-circle {
+    background-color: rgb(255, 221, 226);
+}
+
 
 /* ---------- SUNSCREEN ---------- */
 .sunscreen-image-container {
     width: 140px;
     height: 170px;
     position: absolute;
-    margin-left: 1090px;
+    margin-left: 327px;
+    text-decoration: none;
 }
 
 #range-image5 {
@@ -398,6 +412,98 @@ body {
     text-align: center;
     margin-top: 2.5px;
 }
+
+.sunscreen-image-container:hover .sunscreen-gray-circle {
+    background-color: rgb(255, 221, 226);
+}
+
+
+/* ---------- OUR BESTSELLERS ---------- */
+.best-sellers-container {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 300px;
+}
+
+/* ---------- BESTSELLER 1 ---------- */
+.bestSeller1-container {
+    position: relative;
+    margin-top: 40px;
+    margin-left: -850px;
+}
+
+.bestSeller1-container img {
+    width: 247px; 
+    height: 300px; 
+    border-radius: 15px; /* Optional: Add rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Add box-shadow for a subtle shadow effect */
+    transition: transform 0.3s ease; /* Add a smooth transition for the scaling effect */
+}
+
+.bestSeller1-container img:hover {
+    transform: scale(1.02); /* Enlarge the image on hover */
+}
+
+.bestSeller1-text-container {
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 1075px; 
+    width: 210px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#bestSeller1-brand {
+    margin: 0;
+    font-weight: bold;
+}
+
+#bestSeller1-price {
+    margin: 0;
+    font-weight: bolder;
+}
+
+
+
+/* ---------- BESTSELLER 2 ---------- */
+.bestSeller2-container {
+    position: relative;
+    margin-top: -307px;
+    margin-left: 650px;
+}
+
+.bestSeller2-container img {
+    width: 247px; 
+    height: 300px; 
+    border-radius: 15px; /* Optional: Add rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Add box-shadow for a subtle shadow effect */
+    transition: transform 0.3s ease; /* Add a smooth transition for the scaling effect */
+}
+
+.bestSeller2-container img:hover {
+    transform: scale(1.02); /* Enlarge the image on hover */
+}
+
+.bestSeller2-text-container {
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 755px; 
+    width: 210px;
+    font-size: 14px;
+    text-align: centre;
+}
+
+#bestSeller2-brand {
+    margin: 0;
+    font-weight: bold;
+}
+
+#bestSeller2-price {
+    margin: 0;
+    font-weight: bolder;
+}
+
 
 /* -------------------------- Modal Styles --------------------------*/
 .modal {
@@ -514,6 +620,7 @@ button.cancelbtn:hover, button.signupbtn:hover {
     border-radius: 5px;
     box-sizing: border-box;
 }
+
 
 /* -------------------------- Media query for smaller screens --------------------------*/
 @media (max-width: 600px) {

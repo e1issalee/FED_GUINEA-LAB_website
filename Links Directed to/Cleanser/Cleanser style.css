@@ -15,7 +15,7 @@ body {
     padding: 35px;
     position: fixed; /* Set relative positioning on the navbar */
     z-index: 1000;
-    margin-top: -149px;
+    margin-top: -150px;
 }
 
 .navbar a {
@@ -184,6 +184,33 @@ body {
 
 .product1-container:hover .product1-add-to-cart-container {
     visibility: visible;
+}
+
+/* -------------------- Add to Cart Pop-up -------------------- */
+#cartModal.cartModal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 160px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(212, 212, 212, 0.842);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+}
+
+
+#cartModal.cartModal .cart-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cartModal.cartModal .close {
+    display: none;
 }
 
 
@@ -484,7 +511,7 @@ body {
     visibility: hidden;
     z-index: 2;
     margin-top: 112px;
-    margin-left: -595.5px;
+    margin-left: -598px;
     width: 220px;
 }
 
@@ -562,31 +589,128 @@ body {
     visibility: visible;
 }
 
-/* -------------------- Add to Cart Pop-up -------------------- */
-#cartModal.cartModal {
-    display: none;
-    position: fixed;
-    left: 50%;
+
+/* ------------------------- Product 8 ------------------------- */
+.product8-container {
+    position: relative;
+    margin-top: -280px;
+    margin-left: 660px;
+}
+
+.product8-container img {
+    width: 220px; 
+    height: 273px; 
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.product8-text-container {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 14px; 
+    width: 210px;
+    font-size: 14px;
+    text-align: left;
+}
+
+#product8-brand {
+    margin: 0;
+    font-weight: bold;
+}
+
+#product8-name {
+    margin: 0;
+    font-weight: lighter;
+}
+
+#product8-price {
+    margin: 0;
+    font-weight: bold;
+}
+
+.product8-add-to-cart-container {
+    position: absolute;
     top: 50%;
-    width: 160px;
+    left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(212, 212, 212, 0.842);
+    visibility: hidden;
+    z-index: 2;
+    margin-top: 112px;
+    margin-left: -320px;
+    width: 220px;
+}
+
+#product8-add-to-cart-text {
+    background-color: rgba(0, 0, 0, 0.373);
+    color: white;
     padding: 10px;
-    border-radius: 10px;
-    z-index: 1000;
+    cursor: pointer;
     text-align: center;
 }
 
-
-#cartModal.cartModal .cart-modal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.product8-container:hover .product8-add-to-cart-container {
+    visibility: visible;
 }
 
-#cartModal.cartModal .close {
-    display: none;
+
+/* ------------------------- Product 9 ------------------------- */
+.product9-container {
+    position: relative;
+    margin-top: -280px;
+    margin-left: 935px;
+}
+
+.product9-container img {
+    width: 220px; 
+    height: 273px; 
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.product9-text-container {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 14px; 
+    width: 210px;
+    font-size: 14px;
+    text-align: left;
+}
+
+#product9-brand {
+    margin: 0;
+    font-weight: bold;
+}
+
+#product9-name {
+    margin: 0;
+    font-weight: lighter;
+}
+
+#product9-price {
+    margin: 0;
+    font-weight: bold;
+}
+
+.product9-add-to-cart-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    z-index: 2;
+    margin-top: 112px;
+    margin-left: -182px;
+    width: 220px;
+}
+
+#product9-add-to-cart-text {
+    background-color: rgba(0, 0, 0, 0.373);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.product9-container:hover .product9-add-to-cart-container {
+    visibility: visible;
 }
 
 

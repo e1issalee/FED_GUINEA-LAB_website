@@ -15,7 +15,7 @@ body {
     padding: 35px;
     position: fixed; /* Set relative positioning on the navbar */
     z-index: 1000;
-    margin-top: -149px;
+    margin-top: -150px;
 }
 
 .navbar a {
@@ -122,7 +122,6 @@ body {
     margin-left: 20px;
     margin-top: 5px; 
 }
-
 
 /* ------------------------- Product 1 ------------------------- */
 .product1-container {
@@ -312,7 +311,6 @@ body {
     visibility: visible;
 }
 
-
 /* ------------------------- Product 4 ------------------------- */
 .product4-container {
     position: relative;
@@ -484,7 +482,7 @@ body {
     visibility: hidden;
     z-index: 2;
     margin-top: 112px;
-    margin-left: -595.5px;
+    margin-left: -596px;
     width: 220px;
 }
 
@@ -500,67 +498,6 @@ body {
     visibility: visible;
 }
 
-
-/* ------------------------- Product 7 ------------------------- */
-.product7-container {
-    position: relative;
-    margin-top: -280px;
-    margin-left: 387px;
-}
-
-.product7-container img {
-    width: 220px; 
-    height: 273px; 
-    border-radius: 5px; /* Optional: Add rounded corners */
-}
-
-.product7-text-container {
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 14px; 
-    width: 210px;
-    font-size: 14px;
-    text-align: left;
-}
-
-#product7-brand {
-    margin: 0;
-    font-weight: bold;
-}
-
-#product7-name {
-    margin: 0;
-    font-weight: lighter;
-}
-
-#product7-price {
-    margin: 0;
-    font-weight: bold;
-}
-
-.product7-add-to-cart-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    visibility: hidden;
-    z-index: 2;
-    margin-top: 112px;
-    margin-left: -456px;
-    width: 220px;
-}
-
-#product7-add-to-cart-text {
-    background-color: rgba(0, 0, 0, 0.373);
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    text-align: center;
-}
-
-.product7-container:hover .product7-add-to-cart-container {
-    visibility: visible;
-}
 
 /* -------------------- Add to Cart Pop-up -------------------- */
 #cartModal.cartModal {
