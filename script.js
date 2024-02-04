@@ -69,8 +69,31 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-// Add this line to invoke the showSlides function on page load
-showSlides(slideIndex);
+// -------------------- Email -------------------- // 
+function clearEmailInput(event) {
+  // Prevent default form submission behavior
+  event.preventDefault();
 
+  var emailInput = document.getElementById('email-input');
+  emailInput.value = ''; // Clear the value
+  emailInput.defaultValue = 'Your email address'; // Set the default value
+}
+
+function handleFormSubmit(event) {
+  // Prevent default form submission behavior
+  event.preventDefault();
+
+  var emailInput = document.getElementById('email-input');
+  emailInput.value = ''; // Clear the value
+
+  // Show the Lottie container
+  var lottieContainer = document.getElementById('lottie-container');
+  lottieContainer.style.display = 'block';
+  
+  // Setting a timeout to hide the Lottie container after a certain duration
+  setTimeout(function () {
+    lottieContainer.style.display = 'none';
+  }, 2000); // 2000 milliseconds (2.0 seconds)
+}
 
 

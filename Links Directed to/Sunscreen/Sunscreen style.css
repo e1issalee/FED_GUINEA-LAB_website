@@ -499,6 +499,134 @@ body {
 }
 
 
+/* -------------------------- Footer --------------------------*/
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(213, 233, 246);
+    width: 95.4%;
+    height: 50px;
+    padding: 35px;
+    margin-top: 120px;
+}
+.pre-footer-text-container {
+    position: absolute;
+    left: 620px; /* Adjust as needed */
+    margin-top: -80px;
+}
+
+.guinea-lab-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    padding: 5px 10px;
+    border: 2px solid #555;
+    margin-left: 370px; /* Adjust this value as needed */
+}
+
+.policies-text-container {
+    text-align: left;
+}
+
+.policies-text-container a {
+    position: relative;
+    top: -13px; 
+    margin-left: 25px;
+    font-size: 11px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease; 
+}
+
+.policies-text-container a:hover {
+    color: rgb(76, 76, 241); /* Change the color to white on hover */
+}
+
+#instagram-image {
+    width: 22px; /* Adjust the width as needed */
+    height: 22px; /* Adjust the height as needed */
+    margin-left: 17px;   
+}
+
+#facebook-image {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    margin-left: -50px;
+    margin-top: 33px;
+}
+
+.join-newsletter-container {
+    text-align: left;
+    margin-top: -30px;
+    margin-right: 430px;
+}
+
+#join-newsletter {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
+#get-updates {
+    font-size: 13px; 
+    font-weight: lighter;
+}
+
+#newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email-input {
+    width: 180px; /* Adjust the width as needed */
+    height: 60px; /* Increase the height as needed */
+    padding-left: 10px; /* Add padding for better appearance */
+    border: 1px solid black; /* Add a border for better visibility */
+    border-radius: 5px; /* Add rounded corners */
+    margin-top: 43px;
+    margin-bottom: 50px;
+    background-color: transparent;
+    margin-left: -1100px; /* Adjust this value to move it more to the left */
+}
+
+
+#email-input::placeholder {
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+#email-input:before {
+    content: "▶"; /* Unicode character for a right-pointing triangle */
+    font-size: 16px; /* Adjust the font size as needed */
+    margin-right: 5px; /* Adjust the margin as needed */
+}
+
+#email-input:focus::placeholder {
+    color: transparent; /* Hide the placeholder text on focus */
+}
+
+#email-input:focus:before {
+    content: ""; /* Hide the triangle on focus */
+}
+
+#email-input:focus {
+    outline: none; /* Remove the outline on focus */
+}
+
+#lottie-container {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 228, 228, 0.842);
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+}
+
+
 /* -------------------- Add to Cart Pop-up -------------------- */
 #cartModal.cartModal {
     display: none;

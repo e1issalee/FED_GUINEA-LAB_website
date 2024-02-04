@@ -60,7 +60,7 @@ body {
     font-size: 25px;
     padding: 5px 10px;
     border: 2px solid #555;
-    text-align: center; /* Use text-align to center the element */
+    margin-left: -9px;
 }
 
 
@@ -70,8 +70,8 @@ body {
 .navbar a:nth-child(5), /* ABOUT US */
 .navbar a:nth-child(6), /* GAMES */
 .navbar a:nth-child(7) { /* CONTACT US */
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 28px;
     margin-top: 5px;
 }
 
@@ -429,8 +429,9 @@ body {
 /* ---------- BESTSELLER 1 ---------- */
 .bestSeller1-container {
     position: relative;
-    margin-top: 40px;
-    margin-left: -850px;
+    display: inline-block; /* Display containers inline to have them side by side */
+    margin: -25px 20px 0 20px; /* Adjust margins as needed */
+    margin-left: 55px;
 }
 
 .bestSeller1-container img {
@@ -448,7 +449,7 @@ body {
 .bestSeller1-text-container {
     position: absolute;
     margin-top: -5px;
-    margin-left: 1075px; 
+    margin-left: 15px; /* Adjust as needed */
     width: 210px;
     font-size: 14px;
     text-align: center;
@@ -465,12 +466,11 @@ body {
 }
 
 
-
 /* ---------- BESTSELLER 2 ---------- */
 .bestSeller2-container {
     position: relative;
-    margin-top: -307px;
-    margin-left: 650px;
+    display: inline-block; /* Display containers inline to have them side by side */
+    margin: 40px 20px 0 20px; /* Adjust margins as needed */
 }
 
 .bestSeller2-container img {
@@ -488,10 +488,10 @@ body {
 .bestSeller2-text-container {
     position: absolute;
     margin-top: -5px;
-    margin-left: 755px; 
+    margin-left: 13px; /* Adjust as needed */
     width: 210px;
     font-size: 14px;
-    text-align: centre;
+    text-align: center;
 }
 
 #bestSeller2-brand {
@@ -504,6 +504,210 @@ body {
     font-weight: bolder;
 }
 
+
+/* ---------- BESTSELLER 3 ---------- */
+.bestSeller3-container {
+    position: relative;
+    display: inline-block; /* Display containers inline to have them side by side */
+    margin: 40px 20px 0 0; /* Adjust margins as needed */
+}
+
+.bestSeller3-container img {
+    width: 247px; 
+    height: 300px; 
+    border-radius: 15px; /* Optional: Add rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Add box-shadow for a subtle shadow effect */
+    transition: transform 0.3s ease; /* Add a smooth transition for the scaling effect */
+}
+
+.bestSeller3-container img:hover {
+    transform: scale(1.02); /* Enlarge the image on hover */
+}
+
+.bestSeller3-text-container {
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 13px; /* Adjust as needed */
+    width: 210px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#bestSeller3-brand {
+    margin: 0;
+    font-weight: bold;
+}
+
+#bestSeller3-price {
+    margin: 0;
+    font-weight: bolder;
+}
+
+
+/* ---------- BESTSELLER 4 ---------- */
+.bestSeller4-container {
+    position: relative;
+    display: inline-block; /* Display containers inline to have them side by side */
+    margin: 40px 20px 0 0; /* Adjust margins as needed */
+}
+
+.bestSeller4-container img {
+    width: 247px; 
+    height: 300px; 
+    border-radius: 15px; /* Optional: Add rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Add box-shadow for a subtle shadow effect */
+    transition: transform 0.3s ease; /* Add a smooth transition for the scaling effect */
+}
+
+.bestSeller4-container img:hover {
+    transform: scale(1.02); /* Enlarge the image on hover */
+}
+
+.bestSeller4-text-container {
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 13px; /* Adjust as needed */
+    width: 210px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#bestSeller4-brand {
+    margin: 0;
+    font-weight: bold;
+}
+
+#bestSeller4-price {
+    margin: 0;
+    font-weight: bolder;
+}
+
+/* -------------------------- Footer --------------------------*/
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(213, 233, 246);
+    width: 95.4%;
+    height: 50px;
+    padding: 35px;
+    margin-top: 170px;
+}
+.pre-footer-text-container {
+    position: absolute;
+    left: 620px; /* Adjust as needed */
+    margin-top: -80px;
+}
+
+.guinea-lab-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    padding: 5px 10px;
+    border: 2px solid #555;
+    margin-left: 370px; /* Adjust this value as needed */
+}
+
+.policies-text-container {
+    text-align: left;
+}
+
+.policies-text-container a {
+    position: relative;
+    top: -13px; 
+    margin-left: 25px;
+    font-size: 11px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease; 
+}
+
+.policies-text-container a:hover {
+    color: rgb(76, 76, 241); /* Change the color to white on hover */
+}
+
+#instagram-image {
+    width: 22px; /* Adjust the width as needed */
+    height: 22px; /* Adjust the height as needed */
+    margin-left: 17px;   
+}
+
+#facebook-image {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    margin-left: -78px;
+    margin-top: 33px;
+}
+
+.join-newsletter-container {
+    text-align: left;
+    margin-top: -30px;
+    margin-right: 430px;
+}
+
+#join-newsletter {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
+#get-updates {
+    font-size: 13px; 
+    font-weight: lighter;
+}
+
+#newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email-input {
+    width: 180px; /* Adjust the width as needed */
+    height: 60px; /* Increase the height as needed */
+    padding-left: 10px; /* Add padding for better appearance */
+    border: 1px solid black; /* Add a border for better visibility */
+    border-radius: 5px; /* Add rounded corners */
+    margin-top: 43px;
+    margin-bottom: 50px;
+    background-color: transparent;
+    margin-left: -1100px; /* Adjust this value to move it more to the left */
+}
+
+
+#email-input::placeholder {
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+#email-input:before {
+    content: "▶"; /* Unicode character for a right-pointing triangle */
+    font-size: 16px; /* Adjust the font size as needed */
+    margin-right: 5px; /* Adjust the margin as needed */
+}
+
+#email-input:focus::placeholder {
+    color: transparent; /* Hide the placeholder text on focus */
+}
+
+#email-input:focus:before {
+    content: ""; /* Hide the triangle on focus */
+}
+
+#email-input:focus {
+    outline: none; /* Remove the outline on focus */
+}
+
+#lottie-container {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 228, 228, 0.842);
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+}
 
 /* -------------------------- Modal Styles --------------------------*/
 .modal {

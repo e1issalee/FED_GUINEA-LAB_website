@@ -45,10 +45,6 @@ function addToCart() {
 
     // Show the cart modal
     showCartModal();
-
-    // Set the Lottie animation source
-    var lottiePlayer = document.getElementById('lottiePlayer');
-    lottiePlayer.src = 'path/to/your/animation.json'; // Replace with the actual path to your Lottie animation file
 }
 
 // Function to show the cart modal
@@ -67,3 +63,30 @@ function closeModal() {
     var cartModal = document.getElementById('cartModal');
     cartModal.style.display = 'none';
 }
+
+// -------------------- Email -------------------- // 
+function clearEmailInput(event) {
+    // Prevent default form submission behavior
+    event.preventDefault();
+  
+    var emailInput = document.getElementById('email-input');
+    emailInput.value = ''; // Clear the value
+    emailInput.defaultValue = 'Your email address'; // Set the default value
+  }
+  
+  function handleFormSubmit(event) {
+    // Prevent default form submission behavior
+    event.preventDefault();
+  
+    var emailInput = document.getElementById('email-input');
+    emailInput.value = ''; // Clear the value
+  
+    // Show the Lottie container
+    var lottieContainer = document.getElementById('lottie-container');
+    lottieContainer.style.display = 'block';
+    
+    // Setting a timeout to hide the Lottie container after a certain duration
+    setTimeout(function () {
+      lottieContainer.style.display = 'none';
+    }, 2000); // 2000 milliseconds (2.0 seconds)
+  }
