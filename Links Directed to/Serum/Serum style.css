@@ -124,6 +124,23 @@ body {
 }
 
 
+/* -------------------------- About Us Popup --------------------------*/
+#aboutUsModal {
+    margin-top: 50px;
+}
+
+#aboutUsModal p {
+    width: 90%;
+    margin: 25px auto 0; 
+}
+
+.highlight-text {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+
 /* ------------------------- Product 1 ------------------------- */
 .product1-container {
     position: relative;
@@ -134,7 +151,7 @@ body {
 .product1-container img {
     width: 220px; 
     height: 275px; 
-    border-radius: 5px; /* Optional: Add rounded corners */
+    border-radius: 5px; 
 }
 
 .product1-text-container {
@@ -197,13 +214,13 @@ body {
 .product2-container img {
     width: 220px; 
     height: 273px; 
-    border-radius: 5px; /* Optional: Add rounded corners */
+    border-radius: 5px; 
 }
 
 .product2-text-container {
     position: absolute;
     margin-top: 10px;
-    margin-left: 14px; /* Adjust as needed */
+    margin-left: 14px; 
     width: 210px;
     font-size: 14px;
     text-align: left;

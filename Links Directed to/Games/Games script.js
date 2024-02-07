@@ -13,6 +13,21 @@ window.onscroll = function () {
     }
 };
 
+document.addEventListener('DOMContentLoaded', function () {
+    var infoIcon = document.getElementById('info-icon');
+    var howToPlayContainer = document.querySelector('.how-to-play-container');
+
+    infoIcon.addEventListener('click', function () {
+        if (howToPlayContainer.style.display === 'block') {
+            howToPlayContainer.style.display = 'none';
+        } else {
+            howToPlayContainer.style.display = 'block';
+        }
+    });
+});
+
+
+
 
 
 // Sign in form 
@@ -30,43 +45,6 @@ window.onclick = function (event) {
             modal.style.display = 'none';
         }
     }
-}
-
-// Slideshow
-var slideIndex = 1;
-
-// This function will be called on window load
-window.onload = function() {
-  showSlides(slideIndex);
-};
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  
-  if (n > slides.length) {
-    slideIndex = 1;
-  }    
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
 }
 
 // -------------------- Email -------------------- // 
@@ -120,15 +98,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// -------------------- Scroll to Top -------------------- // 
-function scrollToTop() {
-  // Scroll smoothly to the top of the page
-  window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-  });
-}
-
 // -------------------- Scroll to Contact Us -------------------- // 
 document.addEventListener('DOMContentLoaded', function() {
   var scrollLinks = document.querySelectorAll('a[href^="#"]');
@@ -151,14 +120,3 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
 });
-
-
-
-
-
-
-
-
-
-
-

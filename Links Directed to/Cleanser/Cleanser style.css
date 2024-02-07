@@ -124,6 +124,23 @@ body {
 }
 
 
+/* -------------------------- About Us Popup --------------------------*/
+#aboutUsModal {
+    margin-top: 50px;
+}
+
+#aboutUsModal p {
+    width: 90%;
+    margin: 25px auto 0; 
+}
+
+.highlight-text {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+
 /* ------------------------- Product 1 ------------------------- */
 .product1-container {
     position: relative;
@@ -185,34 +202,6 @@ body {
 .product1-container:hover .product1-add-to-cart-container {
     visibility: visible;
 }
-
-/* -------------------- Add to Cart Pop-up -------------------- */
-#cartModal.cartModal {
-    display: none;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    width: 160px;
-    transform: translate(-50%, -50%);
-    background-color: rgba(212, 212, 212, 0.842);
-    padding: 10px;
-    border-radius: 10px;
-    z-index: 1000;
-    text-align: center;
-}
-
-
-#cartModal.cartModal .cart-modal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#cartModal.cartModal .close {
-    display: none;
-}
-
 
 /* ------------------------- Product 2 ------------------------- */
 .product2-container {
@@ -538,7 +527,7 @@ body {
 .product7-container img {
     width: 220px; 
     height: 273px; 
-    border-radius: 5px; /* Optional: Add rounded corners */
+    border-radius: 5px; 
 }
 
 .product7-text-container {
@@ -662,7 +651,7 @@ body {
 .product9-container img {
     width: 220px; 
     height: 273px; 
-    border-radius: 5px; /* Optional: Add rounded corners */
+    border-radius: 5px; 
 }
 
 .product9-text-container {
@@ -726,7 +715,7 @@ body {
 }
 .pre-footer-text-container {
     position: absolute;
-    left: 620px; /* Adjust as needed */
+    left: 620px; 
     margin-top: -80px;
 }
 
@@ -737,7 +726,7 @@ body {
     font-size: 23px;
     padding: 5px 10px;
     border: 2px solid #555;
-    margin-left: 370px; /* Adjust this value as needed */
+    margin-left: 370px; 
 }
 
 .policies-text-container {
@@ -839,6 +828,34 @@ body {
     border-radius: 10px;
     z-index: 1000;
     text-align: center;
+}
+
+
+/* -------------------- Add to Cart Pop-up -------------------- */
+#cartModal.cartModal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 160px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(212, 212, 212, 0.842);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+}
+
+
+#cartModal.cartModal .cart-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cartModal.cartModal .close {
+    display: none;
 }
 
 

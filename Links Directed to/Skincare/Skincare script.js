@@ -66,31 +66,7 @@ function showCartModal() {
 function closeModal() {
     var cartModal = document.getElementById('cartModal');
     cartModal.style.display = 'none';
-}   
-
-
-// -------------------- About Us -------------------- // 
-// Function to toggle modal display
-function toggleModal(modalId) {
-    var modal = document.getElementById(modalId);
-    modal.style.display = (modal.style.display === 'block') ? 'none' : 'block';
-  }
-  
-  // Close the About Us modal if the close button is clicked
-  document.getElementById('closeAboutUsModal').addEventListener('click', function() {
-    toggleModal('aboutUsModal');
-  });
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    // Get the current URL path
-    var currentPath = window.location.pathname;
-  
-    // Check if the current path contains "aboutUs"
-    if (currentPath.includes("aboutUs")) {
-        // Add the "active" class to the "About Us" link
-        document.getElementById('aboutUsLink').classList.add('active');
-    }
-  });
+}
 
 
 // -------------------- Email -------------------- // 
@@ -143,4 +119,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
   });
-  

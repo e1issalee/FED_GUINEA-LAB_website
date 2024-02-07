@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
 
     <script src="Toner script.js"></script>
-
 </head>
 <body>
     <div class="navbar">
@@ -21,12 +20,12 @@
             <span class="icon">&#128269;</span>
             <input type="text" placeholder="SEARCH..." class="search-input">
         </a>
-        <a href="#skincare">SKINCARE</a>
+        <a href="../Skincare/Skincare index.html">SKINCARE</a>
         <a href="#brands">BRANDS</a>
-        <a href="#guinea+lab">GUINEA+LAB</a>
-        <a href="#aboutUs">ABOUT US</a>
-        <a href="#games">GAMES</a>
-        <a href="#contactUs">CONTACT US</a>
+        <a href="../../index.html">GUINEA+LAB</a>
+        <a href="#aboutUs" id="aboutUsLink" class="nav-link" onclick="toggleModal('aboutUsModal')">ABOUT US</a>
+        <a href="../Games/Games index.html">GAMES</a>
+        <a href="#newsletter-form">CONTACT US</a>
 
         <button class="login-button" id="loginBtn" onclick="toggleModal('signupModal')">
             <span class="icon">&#128100;</span>
@@ -39,6 +38,22 @@
         <a href="#shoppingCart" class="cart-link">
             <i style="font-size: 15px;" class="fa">&#xf07a;</i>
         </a>
+    </div>
+
+
+    <!------------- About Us Popup ------------->
+    <div class="modal" id="aboutUsModal">
+        <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <span class="highlight-text">ABOUT US</span><br>
+          <p>Welcome to GUINEA+LAB! We are a skincare brand to create a revolutionary experience that fuses effective 
+            skincare solutions with a touch of playful entertainment. Our project aims to redefine beauty routines, 
+            offering a curated collection of skincare essentials from renowned brands. The website revolves around a 
+            membership program where users earn "face masks" with every purchase – tokens that unlock a world of skincare 
+            adventures and exclusive perks. What sets us apart is our commitment to affordability without compromising quality. 
+            By collaborating with other esteemed skincare brands, we bring you their renowned products at a more 
+            accessible price point, ensuring that luxury skincare is within everyone's reach.</p>
+        </div>
     </div>
 
     <!----------- Product 1 ----------->

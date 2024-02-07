@@ -124,6 +124,23 @@ body {
 }
 
 
+/* -------------------------- About Us Popup --------------------------*/
+#aboutUsModal {
+    margin-top: 50px;
+}
+
+#aboutUsModal p {
+    width: 90%;
+    margin: 25px auto 0; 
+}
+
+.highlight-text {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+
 /* ------------------------- Product 1 ------------------------- */
 .product1-container {
     position: relative;

@@ -5,8 +5,11 @@ body {
     background-color: whitesmoke;
 }
 
-/* -------------------------- Navigation Bar --------------------------*/
+html {
+    scroll-behavior: smooth;
+}
 
+/* -------------------------- Navigation Bar --------------------------*/
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -15,7 +18,7 @@ body {
     padding: 35px;
     position: fixed; /* Set relative positioning on the navbar */
     z-index: 1000;
-    margin-top: -155px;
+    margin-top: -150px;
 }
 
 .navbar a {
@@ -60,9 +63,8 @@ body {
     font-size: 25px;
     padding: 5px 10px;
     border: 2px solid #555;
-    margin-left: -9px;
+    text-align: center; /* Use text-align to center the element */
 }
-
 
 
 .navbar a:nth-child(2), /* SKINCARE */
@@ -70,8 +72,8 @@ body {
 .navbar a:nth-child(5), /* ABOUT US */
 .navbar a:nth-child(6), /* GAMES */
 .navbar a:nth-child(7) { /* CONTACT US */
-    margin-left: 10px;
-    margin-right: 28px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 5px;
 }
 
@@ -120,7 +122,7 @@ body {
 }
 
 .navbar a.cart-link .fa {
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 5px; 
 }
 
@@ -130,7 +132,7 @@ body {
   max-width: 1000px;
   position: relative;
   margin: auto;
-  margin-top: 155px;
+  margin-top: 150px;
 }
 
 /* Hide the images by default */
@@ -708,6 +710,23 @@ body {
     z-index: 1000;
     text-align: center;
 }
+
+/* -------------------------- About Us Popup --------------------------*/
+#aboutUsModal {
+    margin-top: 50px;
+}
+
+#aboutUsModal p {
+    width: 90%;
+    margin: 25px auto 0; 
+}
+
+.highlight-text {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
 
 /* -------------------------- Modal Styles --------------------------*/
 .modal {

@@ -64,6 +64,31 @@ function closeModal() {
     cartModal.style.display = 'none';
 }
 
+
+// -------------------- About Us -------------------- // 
+// Function to toggle modal display
+function toggleModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = (modal.style.display === 'block') ? 'none' : 'block';
+  }
+  
+  // Close the About Us modal if the close button is clicked
+  document.getElementById('closeAboutUsModal').addEventListener('click', function() {
+    toggleModal('aboutUsModal');
+  });
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get the current URL path
+    var currentPath = window.location.pathname;
+  
+    // Check if the current path contains "aboutUs"
+    if (currentPath.includes("aboutUs")) {
+        // Add the "active" class to the "About Us" link
+        document.getElementById('aboutUsLink').classList.add('active');
+    }
+  });
+
+
 // -------------------- Email -------------------- // 
 function clearEmailInput(event) {
     // Prevent default form submission behavior
@@ -90,3 +115,27 @@ function clearEmailInput(event) {
       lottieContainer.style.display = 'none';
     }, 2000); // 2000 milliseconds (2.0 seconds)
   }
+
+
+// -------------------- Scroll to Contact Us -------------------- // 
+document.addEventListener('DOMContentLoaded', function() {
+var scrollLinks = document.querySelectorAll('a[href^="#"]');
+
+for (var i = 0; i < scrollLinks.length; i++) {
+    scrollLinks[i].addEventListener('click', function(e) {
+        e.preventDefault();
+
+        var targetId = this.getAttribute('href');
+        var targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+            var offsetTop = targetElement.offsetTop;
+            
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+}
+});

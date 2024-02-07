@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUINEA+LAB</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="Skincare style.css" type="text/css">
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Link to the external JS file -->
+    <script src="Skincare script.js"></script></head>
+<body>
+    <div class="navbar">
+        <a href="#search" class="search-link">
+            <span class="icon">&#128269;</span>
+            <input type="text" placeholder="SEARCH..." class="search-input">
+        </a>
+        <a href="#skincare">SKINCARE</a>
+        <a href="#brands">BRANDS</a>
+        <a href="#guinea+lab">GUINEA+LAB</a>
+        <a href="#aboutUs">ABOUT US</a>
+        <a href="#games">GAMES</a>
+        <a href="#newsletter-form">CONTACT US</a>
+
+        <button class="login-button" id="loginBtn" onclick="toggleModal('signupModal')">
+            <span class="icon">&#128100;</span>
+            <span class="login-text">
+                LOGIN /<br> REGISTER
+            </span>
+        </button>
+
+        <!-- Shopping Cart Icon -->
+        <a href="#shoppingCart" class="cart-link">
+            <i style="font-size: 15px;" class="fa">&#xf07a;</i>
+        </a>
+    </div>
+
+
+    <!----------- Items ----------->
+    <div class="cleanser-container">
+        <p id="cleanser-text">
+            <span class="highlight-text">CLEANSER </span>removes dirt, oil, and impurities from the skin, helping to maintain a clean and healthy complexion
+        </p>
+                <div class="facial-cleanser-container">
+            <p id="facial-cleanser">FACIAL CLEANSER</p>
+            
+            <!----------- Product 1 ----------->
+            <div class="product1-container">
+                <img src="Skincare-images/Anua-Heartleaf-Oil-Cleanser.jpg" alt="Anua Pore Control Cleansing Oil">
+                <div class="product1-text-container">
+                    <p id="product1-brand">Anua</p>
+                    <p id="product1-name">Anua Pore Control Cleansing Oil</p>
+                    <p id="product1-price">$19.50&emsp;200ml</p>
+                </div>
+
+                <div class="product1-add-to-cart-container">
+                    <p id="product1-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+                </div>        
+            </div>
+
+            <!----------- Product 2 ----------->
+            <div class="product2-container">
+                <img src="Skincare-images/Anua-Heartleaf-Cleansing-Foam.jpg" alt="Anua Heartleaf Cleansing Foam">
+                <div class="product2-text-container">
+                    <p id="product2-brand">Anua</p>
+                    <p id="product2-name">Anua Heartleaf Cleansing Foam</p>
+                    <p id="product2-price">$17.02&emsp;150ml</p>
+                </div>
+
+                <div class="product2-add-to-cart-container">
+                    <p id="product2-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+                </div> 
+            </div>
+
+            <!----------- Product 3 ----------->
+            <div class="product3-container">
+                <img src="Skincare-images/Glow-Recipe-Gentle-Cleanser.jpg" alt="Glow Recipe Gentle Cleanser">
+                <div class="product3-text-container">
+                    <p id="product3-brand">Glow Recipe</p>
+                    <p id="product3-name">Blueberry Bounce Gentle Cleanser</p>
+                    <p id="product3-price">$56.00&emsp;160ml</p>
+                </div>
+
+                <div class="product3-add-to-cart-container">
+                    <p id="product3-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+                </div> 
+            </div>
+
+            <!----------- Product 4 ----------->
+            <div class="product4-container">
+                <img src="Skincare-images/Glow-Recipe-Avocado-Cleanser.jpg" alt="Glow Recipe Avocado Cleanser">
+                <div class="product4-text-container">
+                    <p id="product4-brand">Glow Recipe</p>
+                    <p id="product4-name">Avocado Ceramide Moisture Barrier Cleanser</p>
+                    <p id="product4-price">$46.00&emsp;150ml</p>
+                </div>
+
+                <div class="product4-add-to-cart-container">
+                    <p id="product4-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+                </div> 
+            </div>
+
+            <!----------- Product 5 ----------->
+            <div class="product5-container">
+                <img src="Skincare-images/Laneige-Cleanser.jpg" alt="Laneige Cleanser">
+                <div class="product5-text-container">
+                    <p id="product5-brand">Laneige</p>
+                    <p id="product5-name">Water Bank Blue Hyaluronic Cleansing Foam</p>
+                    <p id="product5-price">$39.00&emsp;150ml</p>
+                </div>
+
+                <div class="product5-add-to-cart-container">
+                    <p id="product5-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div> 
+
+            <!----------- Product 6 ----------->
+            <div class="product6-container">
+                <img src="Skincare-images/Medicube-Zero-Foam-Cleanser.jpg" alt="Medicube Zero Foam Cleanser">
+                <div class="product6-text-container">
+                    <p id="product6-brand">Medicube</p>
+                    <p id="product6-name">Zero Foam Cleanser</p>
+                    <p id="product6-price">$24.00&emsp;120ml</p>
+                </div>
+
+                <div class="product6-add-to-cart-container">
+                    <p id="product6-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+                </div> 
+            </div>
+
+            <!----------- Product 7 ----------->
+            <div class="product7-container">
+                <img src="Skincare-images/La-Roche-Posay-Foaming-Gel.jpg" alt="La Roche Posay Foaming Gel">
+                <div class="product7-text-container">
+                    <p id="product7-brand">La Roche-Posay</p>
+                    <p id="product7-name">Effaclar Foaming Purifying Gel</p>
+                    <p id="product7-price">$39.25&emsp;200ml</p>
+                </div>
+
+                <div class="product7-add-to-cart-container">
+                    <p id="product7-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+                </div> 
+            </div>
+
+            <!----------- Product 8 ----------->
+            <div class="product8-container">
+                <img src="Skincare-images/La-Roche-Posay-Cleansing-Oil.jpg" alt="La Roche-Posay Cleansing Oil">
+                <div class="product8-text-container">
+                    <p id="product8-brand">La Roche Posay</p>
+                    <p id="product8-name">Lipikar Gentle Foaming Cleansing Oil</p>
+                    <p id="product8-price">$31.20&emsp;400ml</p>
+                </div>
+
+                <div class="product8-add-to-cart-container">
+                    <p id="product8-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+                </div> 
+            </div>
+
+            <!----------- Product 9 ----------->
+            <div class="product9-container">
+                <img src="Skincare-images/The-Ordinary-Cleanser.jpg" alt="The Ordinary Cleanser">
+                <div class="product9-text-container">
+                    <p id="product9-brand">The Ordinary</p>
+                    <p id="product9-name">Squalane Cleanser</p>
+                    <p id="product9-price">$39.00&emsp;150ml</p>
+                </div>
+
+                <div class="product9-add-to-cart-container">
+                    <p id="product9-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------- Toner  ------------------->
+    <div class="toner-container">
+        <p id="toner-text">
+            <span class="highlight-text">TONER </span>helps balance the skin's pH, remove residual impurities, and prepare the skin for better absorption of subsequent skincare products
+        </p>        
+        <!----------- Product 10 ----------->
+        <div class="product10-container">
+            <img src="Skincare-images/Anua-Toner.jpg" alt="Anua Soothing Toner">
+            <div class="product10-text-container">
+                <p id="product10-brand">Anua</p>
+                <p id="product10-name">Anua Heartleaf 77% Soothing Toner</p>
+                <p id="product10-price">$38.25&emsp;500ml</p>
+            </div>
+
+            <div class="product10-add-to-cart-container">
+                <p id="product10-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div>        
+        </div>
+
+        <!----------- Product 11 ----------->
+        <div class="product11-container">
+            <img src="Skincare-images/Anua-Peach-Toner.jpg" alt="Anua Peach Toner">
+            <div class="product11-text-container">
+                <p id="product11-brand">Anua</p>
+                <p id="product11-name">Anua Peach 77% Niacin Essence Toner</p>
+                <p id="product11-price">$38.62&emsp;250ml</p>
+            </div>
+
+            <div class="product11-add-to-cart-container">
+                <p id="product11-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div> 
+        </div>
+
+        <!----------- Product 12 ----------->
+        <div class="product12-container">
+            <img src="Skincare-images/Glow-Recipe-Toner.jpg" alt="Glow Recipe Toner">
+            <div class="product12-text-container">
+                <p id="product12-brand">Glow Recipe</p>
+                <p id="product12-name">Glow Recipe Watermelon Glow PHA + BHA Pore-Tight Toner</p>
+                <p id="product12-price">$54.00&emsp;150ml</p>
+            </div>
+
+            <div class="product12-add-to-cart-container">
+                <p id="product12-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div> 
+        </div>
+
+        <!----------- Product 13 ----------->
+        <div class="product13-container">
+            <img src="Skincare-images/Laneige-Toner.jpg" alt="Laneige Toner">
+            <div class="product13-text-container">
+                <p id="product13-brand">Laniege</p>
+                <p id="product13-name">Laneige Cream Skin Cerapeptide Toner and Moisturiser</p>
+                <p id="product13-price">$49.00&emsp;170ml</p>
+            </div>
+
+            <div class="product13-add-to-cart-container">
+                <p id="product13-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div> 
+        </div>
+
+        <!----------- Product 14 ----------->
+        <div class="product14-container">
+            <img src="Skincare-images/Medicube-Zero-Pore-Pad-Toner.jpg" alt="Medicube Zero Pore Pad Toner">
+            <div class="product14-text-container">
+                <p id="product14-brand">Medicube</p>
+                <p id="product14-name">Zero Pore Pad Toner 2.0</p>
+                <p id="product14-price">$31.50&emsp;100ml</p>
+            </div>
+
+            <div class="product14-add-to-cart-container">
+                <p id="product14-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div> 
+        </div>
+
+        <!----------- Product 15 ----------->
+        <div class="product15-container">
+            <img src="Skincare-images/Medicube-Red-Toner.jpg" alt="Medicube Red Toner">
+            <div class="product15-text-container">
+                <p id="product15-brand">Medicube</p>
+                <p id="product15-name">Red Toner 2.0</p>
+                <p id="product15-price">$31.50&emsp;100ml</p>
+            </div>
+
+            <div class="product15-add-to-cart-container">
+                <p id="product15-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div> 
+        </div>
+
+        <!----------- Product 16 ----------->
+        <div class="product16-container">
+            <img src="Skincare-images/Medicube-Triple-Collagen-Toner.jpg" alt="Medicube Triple Collagen Toner">
+            <div class="product16-text-container">
+                <p id="product16-brand">Medicube</p>
+                <p id="product16-name">Triple Collagen Toner 2.0</p>
+                <p id="product16-price">$38.50&emsp;140ml</p>
+            </div>
+
+            <div class="product16-add-to-cart-container">
+                <p id="product16-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div> 
+        </div>
+
+        <!----------- Product 17 ----------->
+        <div class="product17-container">
+            <img src="Skincare-images/La-Roche-Posay-Acne-Toner.jpg" alt="La Roche-Posay Acne Toner">
+            <div class="product17-text-container">
+                <p id="product17-brand">La Roche Posay</p>
+                <p id="product17-name">Effaclar Clarifying Solution Acne Toner</p>
+                <p id="product17-price">$33.04&emsp;200ml</p>
+            </div>
+
+            <div class="product17-add-to-cart-container">
+                <p id="product17-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div> 
+        </div>
+
+        <!----------- Product 18 ----------->
+        <div class="product18-container">
+            <img src="Skincare-images/The-Ordinary-Toner.jpg" alt="The Ordinary Exfoliating Toner">
+            <div class="product18-text-container">
+                <p id="product18-brand">The Ordinary</p>
+                <p id="product18-name">The Ordinary Glycolic Acid 7% Toning Solution</p>
+                <p id="product18-price">$25.00&emsp;240ml</p>
+            </div>
+
+            <div class="product18-add-to-cart-container">
+                <p id="product18-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div> 
+        </div>
+    </div>
+
+
+    <!------------------- Serum  ------------------->
+    <div class="serum-container">
+        <p id="serum-text">
+            <span class="highlight-text">SERUM </span>is a skincare product designed to address specific skin concerns, providing hydration, anti-aging, or targeted treatment with potent active ingredients
+        </p>
+        <!----------- Product 19 ----------->
+        <div class="product19-container">
+            <img src="Skincare-images/Anua-Serum.jpg" alt="Anua Serum">
+            <div class="product19-text-container">
+                <p id="product19-brand">Anua</p>
+                <p id="product19-name">Anua Peach 70% Niacin Serum</p>
+                <p id="product19-price">$37.85&emsp;30ml</p>
+            </div>
+
+            <div class="product19-add-to-cart-container">
+                <p id="product19-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div>        
+        </div>
+    </div>
+
+    <!----------- Product 20 ----------->
+    <div class="product20-container">
+        <img src="Skincare-images/Glow-Recipe-Serum.jpg" alt="Glow Recipe Serum">
+        <div class="product20-text-container">
+            <p id="product20-brand">Glow Recipe</p>
+            <p id="product20-name">Watermelon Glow Niacinamide Dew Drops</p>
+            <p id="product20-price">$79.00&emsp;80ml</p>
+        </div>
+
+        <div class="product20-add-to-cart-container">
+            <p id="product20-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+        </div> 
+    </div>
+
+    <!----------- Product 21 ----------->
+    <div class="product21-container">
+        <img src="Skincare-images/Glow-Recipe-Serum2.jpg" alt="Glow Recipe Strawberry Serum">
+        <div class="product21-text-container">
+            <p id="product21-brand">Glow Recipe</p>
+            <p id="product21-name">Strawberry Smooth BHA + AHA Salicylic Serum</p>
+            <p id="product21-price">$68.00&emsp;30ml</p>
+        </div>
+
+        <div class="product21-add-to-cart-container">
+            <p id="product21-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+        </div> 
+    </div>
+
+    <!----------- Product 22 ----------->
+    <div class="product22-container">
+        <img src="Skincare-images/Laneige-Serum.jpg" alt="Laneige Serum">
+        <div class="product22-text-container">
+            <p id="product22-brand">Laniege</p>
+            <p id="product22-name">Water Bank Blue Hyaluronic Serum</p>
+            <p id="product22-price">$69.00&emsp;50ml</p>
+        </div>
+
+        <div class="product22-add-to-cart-container">
+            <p id="product22-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+        </div> 
+    </div>
+
+    <!----------- Product 23 ----------->
+    <div class="product23-container">
+        <img src="Skincare-images/Medicube-Zero-Pore-Serum.jpg" alt="Medicube Zero Pore Serum">
+        <div class="product23-text-container">
+            <p id="product23-brand">Medicube</p>
+            <p id="product23-name">Zero Pore Serum 2.0</p>
+            <p id="product23-price">$48.90&emsp;37ml</p>
+        </div>
+
+        <div class="product23-add-to-cart-container">
+            <p id="product23-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+        </div> 
+    </div>
+
+    <!----------- Product 24 ----------->
+    <div class="product24-container">
+        <img src="Skincare-images/Medicube-Triple-Collagen-Serum.jpg" alt="Medicube Triple Collagen Serum">
+        <div class="product24-text-container">
+            <p id="product24-brand">Medicube</p>
+            <p id="product24-name">Triple Collagen Serum</p>
+            <p id="product24-price">$36.40&emsp;55ml</p>
+        </div>
+
+        <div class="product24-add-to-cart-container">
+            <p id="product24-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+        </div> 
+    </div>
+
+    <!----------- Product 25 ----------->
+    <div class="product25-container">
+        <img src="Skincare-images/The-Ordinary-Serum.jpg" alt="The Ordinary Serum">
+        <div class="product25-text-container">
+            <p id="product25-brand">The Ordinary</p>
+            <p id="product25-name">Multi-Peptide + HA Serum</p>
+            <p id="product25-price">$36.00&emsp;30ml</p>
+        </div>
+
+        <div class="product25-add-to-cart-container">
+            <p id="product25-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+        </div> 
+    </div>
+
+    <!------------------- Moisturiser  ------------------->
+    <div class="moisturiser-container">
+        <p id="moisturiser-text">
+            <span class="highlight-text">MOISTURISER </span>helps hydrate and nourish the skin, maintaining its moisture balance and preventing dryness
+        </p>
+        <!----------- Product 26 ----------->
+        <div class="product26-container">
+            <img src="Skincare-images/Anua-Moisturiser.jpg" alt="Anua Intense Calming Cream">
+            <div class="product26-text-container">
+                <p id="product26-brand">Anua</p>
+                <p id="product26-name">Anua Heartleaf 70% Intense Calming Cream</p>
+                <p id="product26-price">$35.17&emsp;100ml</p>
+            </div>
+
+            <div class="product26-add-to-cart-container">
+                <p id="product26-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div>        
+        </div>
+
+        <!----------- Product 27 ----------->
+        <div class="product27-container">
+            <img src="Skincare-images/Anua-Peach-Moisturiser.jpg" alt="Anua Peach Moisturiser">
+            <div class="product27-text-container">
+                <p id="product27-brand">Anua</p>
+                <p id="product27-name">Anua Peach 77% Niacin Enriched Cream</p>
+                <p id="product27-price">$28.13&emsp;50ml</p>
+            </div>
+
+            <div class="product27-add-to-cart-container">
+                <p id="product27-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div> 
+        </div>
+
+        <!----------- Product 28 ----------->
+        <div class="product28-container">
+            <img src="Skincare-images/Glow-Recipe-Moisturiser.jpg" alt="Glow Recipe Moisturiser">
+            <div class="product28-text-container">
+                <p id="product28-brand">Glow Recipe</p>
+                <p id="product28-name">Plum Plump Hyaluronic Cream</p>
+                <p id="product28-price">$65.00&emsp;50ml</p>
+            </div>
+
+            <div class="product28-add-to-cart-container">
+                <p id="product28-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div> 
+        </div>
+
+        <!----------- Product 29 ----------->
+        <div class="product29-container">
+            <img src="Skincare-images/Glow-Recipe-Watermelon-Moisturiser.jpg" alt="Glow Recipe Moisturiser">
+            <div class="product29-text-container">
+                <p id="product29-brand">Glow Recipe</p>
+                <p id="product29-name">Watermelon Glow Pink Juice Moisturiser</p>
+                <p id="product29-price">$64.00&emsp;60ml</p>
+            </div>
+
+            <div class="product29-add-to-cart-container">
+                <p id="product29-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div> 
+        </div>
+
+        <!----------- Product 30 ----------->
+        <div class="product30-container">
+            <img src="Skincare-images/Laneige-Moisturiser.jpg" alt="Laneige Moisturiser">
+            <div class="product30-text-container">
+                <p id="product30-brand">Laneige</p>
+                <p id="product30-name">Laneige Water Bank Blue Hyaluronic Gel Moisturiser</p>
+                <p id="product30-price">$58.50&emsp;50ml</p>
+            </div>
+
+            <div class="product30-add-to-cart-container">
+                <p id="product30-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div> 
+        </div>
+
+        <!----------- Product 31 ----------->
+        <div class="product31-container">
+            <img src="Skincare-images/Medicube-Moisturiser.jpg" alt="Medicube Moisturiser">
+            <div class="product31-text-container">
+                <p id="product31-brand">Medicube</p>
+                <p id="product31-name">Red Cream</p>
+                <p id="product31-price">$35.70&emsp;50ml</p>
+            </div>
+
+            <div class="product31-add-to-cart-container">
+                <p id="product31-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div> 
+        </div>
+
+        <!----------- Product 32 ----------->
+        <div class="product32-container">
+            <img src="Skincare-images/The-Ordinary-Moisturiser.jpg" alt="The Ordinary Moisturiser">
+            <div class="product32-text-container">
+                <p id="product32-brand">The Ordinary</p>
+                <p id="product32-name">Natural Moisturiser Factors + HA</p>
+                <p id="product32-price">$36.00&emsp;100ml</p>
+            </div>
+
+            <div class="product32-add-to-cart-container">
+                <p id="product32-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div> 
+        </div>
+    </div>
+
+
+    <!------------------- Moisturiser  ------------------->
+    <div class="sunscreen-container">
+        <p id="sunscreen-text">
+            <span class="highlight-text">SUNSCREEN </span>protects the skin by absorbing or reflecting ultraviolet (UV) radiation from the sun, preventing sunburn and reducing the risk of skin damage and skin cancer
+        </p>    
+        <!----------- Product 33 ----------->
+        <div class="product33-container">
+            <img src="Skincare-images/Anua-Heartleaf-Sunscreen.jpg" alt="Anua Hearleaf Sunscreen">
+            <div class="product33-text-container">
+                <p id="product33-brand">Anua</p>
+                <p id="product33-name">Anua Heartleaf Silky Moisture Sun Cream SPF 50+ PA++</p>
+                <p id="product33-price">$21.50&emsp;50ml</p>
+            </div>
+
+            <div class="product33-add-to-cart-container">
+                <p id="product33-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div>        
+        </div>
+
+        <!----------- Product 34 ----------->
+        <div class="product34-container">
+            <img src="Skincare-images/Glow-Recipe-Suncscreen.jpg" alt="Glow Recipe Sunscreen">
+            <div class="product34-text-container">
+                <p id="product34-brand">Glow Recipe</p>
+                <p id="product34-name">Watermelon Glow Niacinamide Sunscreen SPF 50</p>
+                <p id="product34-price">$57.00&emsp;50ml</p>
+            </div>
+
+            <div class="product34-add-to-cart-container">
+                <p id="product34-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div> 
+        </div>
+
+        <!----------- Product 35 ----------->
+        <div class="product35-container">
+            <img src="Skincare-images/Laneige-Sunscreen.jpg" alt="Laneige Sunscreen">
+            <div class="product35-text-container">
+                <p id="product35-brand">Laneige Sunscreen</p>
+                <p id="product35-name">Radian-C Sunscreen SPF 50+ PA++++</p>
+                <p id="product35-price">$43.00&emsp;50ml</p>
+            </div>
+
+            <div class="product35-add-to-cart-container">
+                <p id="product35-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div> 
+        </div>
+
+        <!----------- Product 36 ----------->
+        <div class="product36-container">
+            <img src="Skincare-images/Medicube-Sunscreen.jpg" alt="Medicube Sunscreen">
+            <div class="product36-text-container">
+                <p id="product36-brand">Medicube</p>
+                <p id="product36-name">Red Moisture Real Sun Cream</p>
+                <p id="product36-price">$32.00&emsp;50ml</p>
+            </div>
+
+            <div class="product36-add-to-cart-container">
+                <p id="product36-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div> 
+        </div>
+
+        <!----------- Product 37 ----------->
+        <div class="product37-container">
+            <img src="Skincare-images/La-Roche-Posay-Sunscreen-Spray.jpg" alt="La Roche-Posay Sunscreen Spray">
+            <div class="product37-text-container">
+                <p id="product37-brand">La Roche-Posay</p>
+                <p id="product37-name">Anthelios Invisible Spray SFP50+</p>
+                <p id="product37-price">$52.40&emsp;200ml</p>
+            </div>
+
+            <div class="product37-add-to-cart-container">
+                <p id="product37-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div> 
+        </div>
+
+        <!----------- Product 38 ----------->
+        <div class="product38-container">
+            <img src="Skincare-images/La-Roche-Posay-Sunscreen.jpg" alt="La Roche-Posay Sunscreen">
+            <div class="product38-text-container">
+                <p id="product38-brand">La Roche-Posay</p>
+                <p id="product38-name">Anthelios UVMune 400 Fluid SPF50+ PA++++</p>
+                <p id="product38-price">$52.40&emsp;50ml</p>
+            </div>
+
+            <div class="product38-add-to-cart-container">
+                <p id="product38-add-to-cart-text" onclick="showCartModal()">ADD TO CART</p>
+            </div> 
+        </div>
+    </div>
+
+    <!-- Include the Lottie player script -->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <!-- Your cart modal with the Lottie player -->
+    <div class="cartModal" id="cartModal">
+        <div class="cart-modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <dotlottie-player src="https://lottie.host/2f9349b7-0772-4a3c-a6cc-043e77e4faf9/pY9ZqM4ae0.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></dotlottie-player>
+            <div class="text-container">
+                <p>Added to cart!</p>
+            </div>  
+        </div>
+    </div>
+
+
+    <div id="signupModal" class="modal">
+        <span onclick="document.getElementById('signupModal').style.display='none'" class="close" title="Exit Form">&times;</span>
+        <form class="modal-content">
+            <div class="container">
+                <h1>Welcome to GUINEA+LAB</h1>
+                <p>Sign in or register with your social media account.</p>
+                <hr>
+    
+                <!-- Social Media Login Buttons -->
+                <div class="social-login">
+                    <a href="#" class="fb btn">
+                        <i class="fa fa-facebook fa-fw"></i> Continue with Facebook
+                    </a>
+                    <a href="#" class="twitter btn">
+                        <i class="fa fa-twitter fa-fw"></i> Continue with Twitter
+                    </a>
+                    <a href="#" class="google btn">
+                        <i class="fa fa-google fa-fw"></i> Continue with Google+
+                    </a>
+                </div>
+    
+                <!-- Or Separator -->
+                <div class="vl">
+                    <div class="vl-innertext">OR</div>
+                </div>
+    
+                <!-- Email/Password Form -->
+                <div class="form-container">
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                </div>
+    
+                <p>By creating an account you agree to our <a href="https://help.shopee.sg/portal/article/77149" target="_blank" style="color: dodgerblue">Terms & Privacy</a>.</p>
+    
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('signupModal').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">SIGN UP</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!----------- Footer ----------->
+    <div class="footer-container">
+        <div class="pre-footer-text-container">
+            <p id="join-the-community">JOIN THE GUINEA+LAB COMMUNITY</p>
+        </div>
+
+        <div class="guinea-lab-text-container">
+            <p id="guinea-lab">GUINEA+LAB</p>
+        </div>
+
+        <div class="policies-text-container">
+            <a href="https://help.shopee.sg/portal/article/77152-Refunds-and-Return-Policy?previousPage=secondary%20category" target="_blank" id="shipping">Shipping & Returns</a><br>
+            <a href="https://help.shopee.sg/portal/article/77149?previousPage=other%20articles" target="_blank" id="privacy-policy">Privacy Policy</a><br>
+            <a href="https://help.shopee.sg/portal/article/77148?previousPage=other%20articles" target="_blank" id="terms">Terms & Conditions</a>
+        </div>
+
+        <div id="instagram-image-container">
+            <a href="https://www.instagram.com/ngeeannpoly?igsh=MWIyb2Z3ajJ4enZhOQ==" target="_blank">
+                <img id="instagram-image" src="Skincare-images/instagram-icon.png" alt="GUINEA+LAB's Instagram">
+            </a>
+        </div>
+
+        <div id="facebook-image-container">
+            <a href="https://www.facebook.com/ngeeannpoly?mibextid=ZbWKwL" target="_blank">
+                <img id="facebook-image" src="Skincare-images/facebook-icon.png" alt="GUINEA+LAB's Facebook">
+            </a>
+        </div>
+
+        <div class="join-newsletter-container">
+            <p id="join-newsletter">JOIN OUR NEWSLETTER</p>
+            <p id="get-updates">Get updates and more</p>
+        </div>
+
+        <form id="newsletter-form" onsubmit="handleFormSubmit(event)">
+            <input type="email" id="email-input" placeholder="Your email address  ▶" required>
+            
+            <!-- Container for Lottie animation -->
+            <div id="lottie-container" style="display: none;">
+                <div class="lottie-player-container">
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+                    <dotlottie-player src="https://lottie.host/72deabc7-2ad4-4876-977a-8298ba5b3d41/auUGRcTK2U.json" background="transparent" speed="1" style="width: 260px; height: 260px;" loop autoplay></dotlottie-player>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
