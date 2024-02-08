@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
 // -------------------- Add to cart Modal -------------------- // 
 // Function to add item to cart
 function addToCart() {

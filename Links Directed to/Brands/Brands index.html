@@ -58,9 +58,122 @@
 
     <!----------- Brands ----------->
     <div class="brands-container">
-        <p id="brand1-text">ASIA</p>
-    </div>    
-    <!----------- Sign up ----------->
+        <p id="asia-text">ASIA</p>
+
+        <div class="brand1-container">
+            <img src="Brands-images/anua-logo.jpg" alt="Anua">
+            <div id="brand1-details">
+                <p id="brand1-name">Anua</p>
+                <p id="brand1-description">Anua is a Korean beauty brand that embraces a holistic approach to beauty. With a foundation 
+                    rooted in the heart of South Korea, Anua has set its sights on a singular mission: to harness the power of natural, 
+                    non-harmful ingredients in the pursuit of naturally beautiful and healthy skin. Dedicated to delivering skincare 
+                    solutions that cater to all skin types, Anua takes a special interest in nurturing sensitive and trouble-prone skin.
+                </p>
+            </div>
+        </div>
+
+        <div class="brand2-container">
+            <img src="Brands-images/glow-recipe-logo.jpg" alt="Glow Recipe">
+            <div id="brand2-details">
+                <p id="brand2-name">Glow Recipe</p>
+                <p id="brand2-description">They create gentle yet effective formulas to deliver clinically proven results like no other.
+                    They formulate with the highest quality ingredients including antioxidant-rich fruit extracts and clinically proven 
+                    actives, but what's not in their formulas is just as important as what is. They provide full ingredient lists for 
+                    complete transparency, and their products are always clean, vegan, and Leaping Bunny certified cruelty-free.
+                </p>
+            </div>
+        </div>
+
+        <div class="brand3-container">
+            <img src="Brands-images/laneige-logo.jpg" alt="Laneige">
+            <div id="brand3-details">
+                <p id="brand3-name">Laneige</p>
+                <p id="brand3-description">Laneige is a renowned South Korean skincare and cosmetics brand, celebrated for its focus on 
+                    hydration and skincare innovation. As part of Amorepacific Corporation, one of South Korea's major beauty companies, 
+                    Laneige is globally recognized for its Water Sleeping Mask, a popular product designed to provide intensive 
+                    overnight hydration. The brand incorporates advanced technologies like Water Science™ into its formulations and 
+                    offers a diverse range of skincare and cosmetics products. Embracing the K-Beauty trend, Laneige has gained 
+                    international popularity and maintains a commitment to delivering effective, clean, and cruelty-free products.
+                </p>
+            </div>
+        </div>
+        
+        <p id="north-america-text">NORTH AMERICA</p>
+        
+        <div class="brand4-container">
+            <img src="Brands-images/the-ordianry-logo.png" alt="The Ordinary">
+            <div id="brand4-details">
+                <p id="brand4-name">The Ordinary</p>
+                <p id="brand4-description">
+                    The Ordinary is a renowned skincare brand recognized for its simplicity, transparency, and affordability. 
+                    Under the DECIEM umbrella, the brand prioritizes effective formulations with proven active ingredients, providing 
+                    detailed concentration information. Known for straightforward and affordable products, The Ordinary adheres to 
+                    cruelty-free practices, appealing to consumers seeking accessible and ethical skincare solutions.
+                </p>
+            </div>
+        </div>
+
+        <p id="europe-text">EUROPE</p>
+        <div class="brand5-container">
+            <img src="Brands-images/la-roche-posay.png" alt="La Roche-Posay">
+            <div id="brand5-details">
+                <p id="brand5-name">La Roche-Posay</p>
+                <p id="brand5-description">
+                    La Roche-Posay is a French skincare brand renowned for dermatologist-tested products designed for sensitive skin. 
+                    Utilizing thermal spring water from La Roche-Posay, known for its soothing properties, the brand offers effective 
+                    solutions for various skincare concerns, including acne and aging. A part of the L'Oréal Group, La Roche-Posay 
+                    prioritizes efficacy, tolerance, and safety, making it a trusted choice for those with sensitive or problematic skin.
+                </p>
+            </div>
+        </div>
+    </div>  
+    
+    <!----------- Footer ----------->
+    <div class="footer-container">
+        <div class="pre-footer-text-container">
+            <p id="join-the-community">JOIN THE GUINEA+LAB COMMUNITY</p>
+        </div>
+
+        <div class="guinea-lab-text-container">
+            <p id="guinea-lab">GUINEA+LAB</p>
+        </div>
+
+        <div class="policies-text-container">
+            <a href="https://help.shopee.sg/portal/article/77152-Refunds-and-Return-Policy?previousPage=secondary%20category" target="_blank" id="shipping">Shipping & Returns</a><br>
+            <a href="https://help.shopee.sg/portal/article/77149?previousPage=other%20articles" target="_blank" id="privacy-policy">Privacy Policy</a><br>
+            <a href="https://help.shopee.sg/portal/article/77148?previousPage=other%20articles" target="_blank" id="terms">Terms & Conditions</a>
+        </div>
+
+        <div id="instagram-image-container">
+            <a href="https://www.instagram.com/ngeeannpoly?igsh=MWIyb2Z3ajJ4enZhOQ==" target="_blank">
+                <img id="instagram-image" src="Brands-images/instagram-icon.png" alt="GUINEA+LAB's Instagram">
+            </a>
+        </div>
+
+        <div id="facebook-image-container">
+            <a href="https://www.facebook.com/ngeeannpoly?mibextid=ZbWKwL" target="_blank">
+                <img id="facebook-image" src="Brands-images/facebook-icon.png" alt="GUINEA+LAB's Facebook">
+            </a>
+        </div>
+
+        <div class="join-newsletter-container">
+            <p id="join-newsletter">JOIN OUR NEWSLETTER</p>
+            <p id="get-updates">Get updates and more</p>
+        </div>
+
+        <form id="newsletter-form" onsubmit="handleFormSubmit(event)">
+            <input type="email" id="email-input" placeholder="Your email address  ▶" required>
+            
+            <!-- Container for Lottie animation -->
+            <div id="lottie-container" style="display: none;">
+                <div class="lottie-player-container">
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+                    <dotlottie-player src="https://lottie.host/72deabc7-2ad4-4876-977a-8298ba5b3d41/auUGRcTK2U.json" background="transparent" speed="1" style="width: 260px; height: 260px;" loop autoplay></dotlottie-player>
+                </div>
+            </div>
+        </form>
+    </div>
+
     <div id="signupModal" class="modal">
         <span onclick="document.getElementById('signupModal').style.display='none'" class="close" title="Exit Form">&times;</span>
         <form class="modal-content" onsubmit="submitForm(); return false;">

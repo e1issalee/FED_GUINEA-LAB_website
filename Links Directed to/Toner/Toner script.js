@@ -30,49 +30,51 @@ function toggleModal(modalId) {
         }
     }
   }
-      // Function to handle form submission
-      function submitForm() {
-        // Get the form elements
-        var email = document.getElementsByName('email')[0].value;
-        var password = document.getElementsByName('psw')[0].value;
+
   
-        // Prepare the data to be sent
-        var formData = {
-            "mEmail": email,
-            "mPassword": password
-        };
-  
-        // Send the data to the RestDB API endpoint
-        fetch('https://guinealabdata-a5d9.restdb.io/rest/member', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'x-apikey': '65c1f98a72864db5dadcc4cf' // API key
-            },
-            body: JSON.stringify(formData)
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log('Data sent successfully:', data);
-  
-            // Optionally, display a success message to the user
-            alert('Registration successful!'); // You can customize this message
-  
-            // Close the modal
-            document.getElementById('signupModal').style.display = 'none';
-        })
-        .catch(error => {
-            console.error('There was a problem sending the data:', error);
-  
-            // Optionally, display an error message to the user
-            alert('Registration failed. Please try again.'); // You can customize this message
-        });
+// Function to handle form submission
+function submitForm() {
+// Get the form elements
+var email = document.getElementsByName('email')[0].value;
+var password = document.getElementsByName('psw')[0].value;
+
+// Prepare the data to be sent
+var formData = {
+    "mEmail": email,
+    "mPassword": password
+};
+
+// Send the data to the RestDB API endpoint
+fetch('https://guinealabdata-a5d9.restdb.io/rest/member', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+        'x-apikey': '65c1f98a72864db5dadcc4cf' // API key
+    },
+    body: JSON.stringify(formData)
+})
+.then(response => {
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
     }
+    return response.json();
+})
+.then(data => {
+    console.log('Data sent successfully:', data);
+
+    // Optionally, display a success message to the user
+    alert('Registration successful!'); // You can customize this message
+
+    // Close the modal
+    document.getElementById('signupModal').style.display = 'none';
+})
+.catch(error => {
+    console.error('There was a problem sending the data:', error);
+
+    // Optionally, display an error message to the user
+    alert('Registration failed. Please try again.'); // You can customize this message
+});
+}
 
 // -------------------- Add to cart Modal -------------------- // 
 // Function to add item to cart

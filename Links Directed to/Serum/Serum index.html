@@ -21,7 +21,7 @@
             <input type="text" placeholder="SEARCH..." class="search-input">
         </a>
         <a href="../Skincare/Skincare index.html">SKINCARE</a>
-        <a href="#brands">BRANDS</a>
+        <a href="../Brands/Brands index.html">BRANDS</a>
         <a href="../../index.html">GUINEA+LAB</a>
         <a href="#aboutUs" id="aboutUsLink" class="nav-link" onclick="toggleModal('aboutUsModal')">ABOUT US</a>
         <a href="../Games/Games index.html">GAMES</a>
@@ -213,10 +213,9 @@
         </div>
     </div>
 
-    <!-------------- Sign Up Page -------------->
     <div id="signupModal" class="modal">
         <span onclick="document.getElementById('signupModal').style.display='none'" class="close" title="Exit Form">&times;</span>
-        <form class="modal-content">
+        <form class="modal-content" onsubmit="submitForm(); return false;">
             <div class="container">
                 <h1>Welcome to GUINEA+LAB</h1>
                 <p>Sign in or register with your social media account.</p>

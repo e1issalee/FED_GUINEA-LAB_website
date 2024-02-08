@@ -32,49 +32,82 @@ window.onclick = function (event) {
       }
   }
 }
-    // Function to handle form submission
-    function submitForm() {
-      // Get the form elements
-      var email = document.getElementsByName('email')[0].value;
-      var password = document.getElementsByName('psw')[0].value;
+// Function to handle form submission
+function submitForm() {
+  // Get the form elements
+  var email = document.getElementsByName('email')[0].value;
+  var password = document.getElementsByName('psw')[0].value;
 
-      // Prepare the data to be sent
-      var formData = {
-          "mEmail": email,
-          "mPassword": password
-      };
+  // Prepare the data to be sent for member registration
+  var memberFormData = {
+    "mEmail": email,
+    "mPassword": password
+  };
 
-      // Send the data to the RestDB API endpoint
-      fetch('https://guinealabdata-a5d9.restdb.io/rest/member', {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json',
-              'x-apikey': '65c1f98a72864db5dadcc4cf' // API key
-          },
-          body: JSON.stringify(formData)
-      })
-      .then(response => {
-          if (!response.ok) {
-              throw new Error('Network response was not ok');
-          }
-          return response.json();
-      })
-      .then(data => {
-          console.log('Data sent successfully:', data);
+  // Send the data to the RestDB API endpoint for member registration
+  fetch('https://guinealabdata-a5d9.restdb.io/rest/member', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-apikey': '65c1f98a72864db5dadcc4cf' // API key
+    },
+    body: JSON.stringify(memberFormData)
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Member Data sent successfully:', data);
 
-          // Optionally, display a success message to the user
-          alert('Registration successful!'); // You can customize this message
+    // After successful member registration, prepare data for membership update
+    var membershipFormData = {
+      "mEmail": email,
+      "PorePatrols": 0
+    };
 
-          // Close the modal
-          document.getElementById('signupModal').style.display = 'none';
-      })
-      .catch(error => {
-          console.error('There was a problem sending the data:', error);
+    // Send the data to the RestDB API endpoint for membership update
+    fetch('https://guinealabdata-a5d9.restdb.io/rest/membership', {
+      method: 'POST', // You may need to check the appropriate method for updating in your API
+      headers: {
+        'Content-Type': 'application/json',
+        'x-apikey': '65c1f98a72864db5dadcc4cf' // API key
+      },
+      body: JSON.stringify(membershipFormData)
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log('Membership Data sent successfully:', data);
 
-          // Optionally, display an error message to the user
-          alert('Registration failed. Please try again.'); // You can customize this message
-      });
-  }
+      // Optionally, display a success message to the user for both registration and membership update
+      alert('Registration and Membership update successful!'); // You can customize this message
+
+      // Close the modal
+      document.getElementById('signupModal').style.display = 'none';
+    })
+    .catch(error => {
+      console.error('There was a problem sending the membership data:', error);
+
+      // Optionally, display an error message to the user for membership update
+      alert('Membership update failed. Please try again.'); // You can customize this message
+    });
+
+  })
+  .catch(error => {
+    console.error('There was a problem sending the member data:', error);
+
+    // Optionally, display an error message to the user for member registration
+    alert('Member registration failed. Please try again.'); // You can customize this message
+  });
+}
+
 
 // Slideshow
 var slideIndex = 1;

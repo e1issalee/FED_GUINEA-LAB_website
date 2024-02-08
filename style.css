@@ -977,13 +977,90 @@ button.cancelbtn:hover, button.signupbtn:hover {
         width: 100px;
         height: 130px;
         position: absolute;
-        margin-left: -190px;
+        margin-left: -160px;
     }
 
     .toner-gray-circle {
         width: 100px;
         height: 130px;
     }
+
+
+    /* ---------- SERUM ---------- */
+    .serum-image-container {
+        width: 100px;
+        height: 130px;
+        position: absolute;
+        margin-left: -40px;
+    }
+
+    .serum-gray-circle {
+        width: 100px;
+        height: 130px;
+    }
+
+
+    /* ---------- MOISTURISER ---------- */
+    .moisturiser-image-container {
+        width: 100px;
+        height: 130px;
+        position: absolute;
+        margin-left: 80px;
+    }
+
+    .moisturiser-gray-circle {
+        width: 100px;
+        height: 130px;
+    }
+
+
+    /* ---------- CLEANSER ---------- */
+    .cleanser-image-container {
+        width: 100px;
+        height: 130px;
+        position: absolute;
+        margin-left: -95px;
+        margin-top: 185px;
+    }
+
+    .cleanser-gray-circle {
+        width: 100px;
+        height: 130px;
+    }
+
+
+    /* ---------- SUNSCREEN ---------- */
+    .sunscreen-image-container {
+        width: 100px;
+        height: 130px;
+        position: absolute;
+        margin-left: 25px;
+        margin-top: 185px;
+    }
+
+    .sunscreen-gray-circle {
+        width: 100px;
+        height: 130px;
+    }
+
+
+    /* ---------- BESTSELLER ---------- */
+    .best-sellers-container {
+        flex-direction: column;
+        margin-top: 500px;
+    }
+
+    #our-bestSellers-text {
+        margin-top: -70px;
+        margin-bottom: 50px;
+    }
+
+    /* ---------- bestseller 1 ---------- */
+    .best-seller1-container {
+        width: 100%;
+        margin-top: 150px; 
+    }
+
 
 }
 

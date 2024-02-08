@@ -94,19 +94,20 @@ function manyPimples() {
 function checkWinLose() {
     if (currentMax > 0 && currentTimeCount === 0) {
         youLose()
-    } gameRestart()
+    } showExitButton()
 }
 
 function youWon() {
     win = true
     resultMessage.innerHTML = 'You won!'
-    gameRestart()
+    showExitButton()
 }
 
 
-function gameRestart() {
-    levelOne.style.display = 'none'
-    playAgainBtn.style.display = 'block'
+function showExitButton() {
+    // Show the exit button
+    const exitButton = document.querySelector('#exit-button');
+    exitButton.style.display = 'block';
 }
 
 playAgainBtn.addEventListener('click', function () {
@@ -124,3 +125,10 @@ function clearPimples() {
 }
 
 gameInit()
+
+// Add this code below your existing JavaScript code
+const exitButton = document.querySelector('#exit-button');
+
+exitButton.addEventListener('click', function () {
+    window.location.href = '../../Games/Games index.html'; // Adjust the path based on your actual file structure
+});

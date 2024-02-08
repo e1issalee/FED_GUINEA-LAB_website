@@ -132,3 +132,19 @@ span{
 #replay-button:hover {
     opacity: 1;
 }
+
+#exit-button {
+    display: none;
+    background-color: #dc3545; /* Choose a color for the background */
+    color: #fff; /* Choose a color for the text */
+    padding: 10px 20px; /* Adjust padding for better appearance */
+    font-size: 16px; /* Adjust font size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Add a pointer cursor for interaction */
+    margin-top: 10px; /* Adjust margin if needed */
+}
+
+#exit-button:hover {
+    background-color: #c82333; /* Darker color on hover */
+}

@@ -92,6 +92,14 @@
   animation: bounce 2s infinite;
 }
 
+#confetti{
+	background-image:	url('images/radiantspinlogo.jpeg');
+    background-size:	contain;                      
+    background-repeat:	no-repeat;
+    margin-left: 605px;
+	margin-top: 10px;
+}
+
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
