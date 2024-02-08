@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-image: url(../images/clearFace.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-flow: column wrap;
+    background-repeat: no-repeat;
+    background-position: center; /* Center the background image */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.circle1 {
+    width: 120px; /* Adjust width according to your needs */
+    height: 150px; /* Adjust height according to your needs */
+    background-color: transparent; /* Adjust background color */
+    border-radius: 40%;
+    margin-left: 250px;
+    margin-top: 460px;
+}
+
+.circle2 {
+    width: 120px; /* Adjust width according to your needs */
+    height: 150px; /* Adjust height according to your needs */
+    background-color: transparent; /* Adjust background color */
+    border-radius: 40%;
+    margin-right: 270px;
+    margin-top: -150px;
+}
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#level-1{
+    width: 60%;
+    height: 60%;
+}
+
+#start-button{
+    width: 150px;
+    height: 30px;
+    background-color: #E7747E;
+    color: black;
+    font-family: 'Fredoka One', cursive;
+    font-size: 14pt;
+    text-transform: uppercase;
+    border-color: black;
+    border-radius: 25px;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+#start-button:hover{
+    opacity: 1;
+}
+
+p{
+    color: black;
+    font-family: 'Fredoka One', cursive;
+    font-size: 14pt;
+}
+
+span{
+    width: 150px;
+    height: 30px;
+    background-image: #F6B495;
+    color: black;
+    font-family: 'Fredoka One', cursive;
+    font-size: 14pt;
+    animation: pulse 1s infinite alternate;
+    border: none;
+    border-radius: 25px;
+    padding: 3px;
+}
+
+@keyframes pulse{
+    0%{border: none;}
+    50%{border: 1px solid #E7747E;}
+    80%{border: 2px solid #E7747E;}
+    100%{border: none;}
+}
+
+.pimple {
+    position: absolute;
+    background-image: url(../images/pimple.png);
+    width: 110px;
+    height: 115px;
+    background-repeat: no-repeat;
+}
+.popped {
+    background-image: url(../images/popped.png);
+}
+
+
+.face{
+    width: 40%;
+    height: 40%;
+}
+
+#result {
+    color: black;
+    font-family: 'Fredoka One', cursive;
+    font-size: 18pt;
+}
+
+#replay-button {
+    width: 150px;
+    height: 30px;
+    background-color: #98A2C6;
+    color: black;
+    font-family: 'Fredoka One', cursive;
+    font-size: 14pt;
+    text-transform: uppercase;
+    border-color: black;
+    border-radius: 25px;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+#replay-button:hover {
+    opacity: 1;
+}

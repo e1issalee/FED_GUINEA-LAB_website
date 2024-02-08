@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+body{
+    margin: 0;
+    background-size: 100%;
+    background-position: left;
+    margin-top: 300px;
+    background-image: url(../images/popFrenzyBG.png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    
+}
+
+.container{
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(6, minmax(100px, 1fr));
+    grid-auto-rows: 200px;
+}
+
+.title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 70pt;
+    text-transform: uppercase;
+    grid-column: 2 / span 4;
+    align-self: center top;
+    animation: jiggleToRight 2s ease-in-out forwards;
+    background: linear-gradient(to right, #8e24f8, #f53f4f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-shadow: -8px 5px 0 rgb(215, 208, 208); /* Adjust the shadow offsets as needed */
+}
+
+
+@keyframes jiggleToRight {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(5%);
+    }
+    50% {
+        transform: translateX(-5%);
+    }
+    75% {
+        transform: translateX(2%);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+.description {
+    font-family: 'Fredoka One', cursive;
+    font-size: 13pt;
+    width: 70%;
+    grid-column: auto;
+    align-self: center;
+    animation: jiggleToLeft 2s ease-in-out forwards;
+    color:rgb(54, 51, 51);
+}
+
+@keyframes jiggleToLeft {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-3px);
+    }
+    100% {
+        transform: translateX(-30px); /* Adjust the value to the final position */
+    }
+}
+
+
+.button{
+    height: 50px;
+    width: 150px;
+    border-radius: 30%;
+    background-color: #f64848;
+    font-family: 'Fredoka One', cursive;
+    font-size: 20pt;
+    margin-left: 780px;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

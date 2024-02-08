@@ -1,0 +1,26 @@
+body {
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    text-align: center;
+    background-color: #b5e8f4; /* Pink background color */
+    margin: 50px;
+  }
+  h1 {
+    color: #333;
+  }
+  p {
+    color: #555;
+    margin-bottom: 20px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }

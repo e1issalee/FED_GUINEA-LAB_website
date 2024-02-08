@@ -66,7 +66,6 @@ html {
     text-align: center; /* Use text-align to center the element */
 }
 
-
 .navbar a:nth-child(2), /* SKINCARE */
 .navbar a:nth-child(3), /* BRANDS */
 .navbar a:nth-child(5), /* ABOUT US */
@@ -847,11 +846,13 @@ button.cancelbtn:hover, button.signupbtn:hover {
 
 /* -------------------------- Media query for smaller screens --------------------------*/
 @media (max-width: 600px) {
+    /* ----------------- Navigation Bar -----------------*/
     .navbar {
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items horizontally */
         padding: 10px;
         width: 100%;
+        margin-top: -300px;
     }
 
     .navbar a:nth-child(1) { /* SEARCH */
@@ -964,6 +965,26 @@ button.cancelbtn:hover, button.signupbtn:hover {
         width: 75%; /* Adjust width as needed */
         height: 50px;
     }
+
+
+    /* ----------------- Slideshow -----------------*/
+    .slideshow-container {
+        margin-top: 300px;
+    }
+
+    /* ---------- TONER ---------- */
+    .toner-image-container {
+        width: 100px;
+        height: 130px;
+        position: absolute;
+        margin-left: -190px;
+    }
+
+    .toner-gray-circle {
+        width: 100px;
+        height: 130px;
+    }
+
 }
 
 
