@@ -75,8 +75,45 @@ In this section, I will be mentioning all of the languages, frameworks, librarie
 
 
 ## Credits
-### Content
 ### Media
+* ### Toner
+   - Product 1 is taken from [Pinterest](https://pin.it/6ivQotS4d)
+   - Product 2 is taken from [Pinterest](https://pin.it/6ivQotS4d)
+   - Product 3 is taken from [Pinterest](https://pin.it/6ivQotS4d)
+   - Product 4 is taken from [Pinterest](https://pin.it/D2FaSlIgY)
+   - Product 5 is taken from [Pinterest](https://pin.it/cZAis8rej)
+   - Product 6 is taken from [Pinterest](https://pin.it/7E1G7QzRz)
+   - Product 7 is taken from [Pinterest](https://pin.it/4w0pLIj9A)
+   - Product 8 is taken from [Pinterest](https://pin.it/4gRUOZ65o)
+   - Product 9 is taken from [Pinterest](https://pin.it/4gRUOZ65o)
+   - Product 10 is taken from [Pinterest](https://pin.it/4JTCtDRPe)
+
+* ### Serum
+  - Product 1 is taken from [Pinterest](https://pin.it/6sTw4RVuX)
+  - Product 2 is taken from [Pinterest](https://pin.it/1LDMlHe8Q)
+  - Product 3 is taken from [Pinterest](https://pin.it/GefSieGdu)
+  - Product 4 is taken from [Pinterest](https://pin.it/1v32Ptd4Z)
+  - Product 5 is taken from [Pinterest](https://themedicube.com.sg/products/triple-collagen-serum-3-0)
+  - Product 6 is taken from [Pinterest](https://www.sephora.sg/products/the-ordinary-multi-peptide-plus-ha-serum/v/30ml)
+
+* ### Moisturiser
+  - Product 1 is taken from [Pinterest](https://pin.it/5vFeAScVo)
+  - Product 2 is taken from [Pinterest](https://pin.it/4MU17wfjq)
+  - Product 3 is taken from [Pinterest](https://pin.it/3j9Qu8N15)
+ 
+* ### Cleanser
+  - Product 1 is taken from [Pinterest](https://pin.it/2Pm7T7eAk)
+  - Product 2 is taken from [Pinterest](https://pin.it/44rCTqtOq)
+  - Product 3 is taken from [Pinterest](https://pin.it/1irGjGhTc)
+  - Product 4 is taken from [Pinterest](https://pin.it/GTf9hZLch)
+  - Product 5 is taken from [Pinterest](https://pin.it/31wXE9jRB)
+  - Product 6 is taken from [Pinterest](https://pin.it/3bATzkg5c)
+  - Product 7 is taken from [Pinterest](https://pin.it/40CqMLg9g)
+
+* ### Sunscreen
+  - Product 1 is taken from [Pinterest](https://pin.it/2IvcYzxxk)
+  - Product 2 is taken from [Pinterest](https://pin.it/4V6jOpEat)
+    
 ### Acknowledgements
 * We drew inspiration from [99designs](https://99designs.com.sg/profiles/artistden/designs/2081923) for the Home page of our website.
 * We received inspiration from [Sephora's website](https://www.sephora.sg/) for the presentation of product names in the Skincare and Brands navigation boxes.
