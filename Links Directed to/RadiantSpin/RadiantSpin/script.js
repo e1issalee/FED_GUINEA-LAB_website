@@ -40,21 +40,6 @@ function stopSound()
 	audio.pause();
 }
 
-// Code for Confetti
-
-let canvas = document.getElementById('confetti');
-canvas.width = 1320;
-
-
-let ctx = canvas.getContext('2d');
-let pieces = [];
-let numberOfPieces = 100;
-let lastUpdateTime = Date.now();
-
-function randomColor() {
-	let colors = ['#f00', '#0f0', '#00f', '#0ff', '#f0f', '#ff0'];
-	return colors[Math.floor(Math.random() * colors.length)];
-}
 
 function update() {
 

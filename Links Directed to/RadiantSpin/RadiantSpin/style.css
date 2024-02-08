@@ -14,13 +14,6 @@
 	overflow-x: hidden;
 }
 
-#confetti{
-	background-image:	url('images/radiantspinlogo.jpeg');
-    background-size:	contain;                      
-    background-repeat:	no-repeat;
-    margin-left: 595px;
-}
-
 .pin {
 	position: absolute;
 	width: 60px;
