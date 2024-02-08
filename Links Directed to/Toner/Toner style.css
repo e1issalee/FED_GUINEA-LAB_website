@@ -150,7 +150,7 @@ body {
 .product1-container img {
     width: 220px; 
     height: 275px; 
-    border-radius: 5px; /* Optional: Add rounded corners */
+    border-radius: 5px; 
 }
 
 .product1-text-container {

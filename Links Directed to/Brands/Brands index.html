@@ -2,9 +2,106 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUINEA+LAB</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="Brands style.css" type="text/css">
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Link to the external JS file -->
+    <script src="Brands script.js"></script></head>
 </head>
 <body>
+    <div class="navbar">
+        <a href="#search" class="search-link">
+            <span class="icon">&#128269;</span>
+            <input type="text" placeholder="SEARCH..." class="search-input">
+        </a>
+        <a href="../Skincare/Skincare index.html">SKINCARE</a>
+        <a href="#brands">BRANDS</a>
+        <a href="../../index.html">GUINEA+LAB</a>
+        <a href="#aboutUs" id="aboutUsLink" class="nav-link" onclick="toggleModal('aboutUsModal')">ABOUT US</a>
+        <a href="../Games/Games index.html">GAMES</a>
+        <a href="#newsletter-form">CONTACT US</a>
+
+        <button class="login-button" id="loginBtn" onclick="toggleModal('signupModal')">
+            <span class="icon">&#128100;</span>
+            <span class="login-text">
+                LOGIN /<br> REGISTER
+            </span>
+        </button>
+
+        <!-- Shopping Cart Icon -->
+        <a href="#shoppingCart" class="cart-link">
+            <i style="font-size: 15px;" class="fa">&#xf07a;</i>
+        </a>
+    </div>
+
+    <!------------- About Us Popup ------------->
+    <div class="modal" id="aboutUsModal">
+        <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <span class="highlight-text">ABOUT US</span><br>
+          <p>Welcome to GUINEA+LAB! We are a skincare brand to create a revolutionary experience that fuses effective 
+            skincare solutions with a touch of playful entertainment. Our project aims to redefine beauty routines, 
+            offering a curated collection of skincare essentials from renowned brands. The website revolves around a 
+            membership program where users earn "face masks" with every purchase – tokens that unlock a world of skincare 
+            adventures and exclusive perks. What sets us apart is our commitment to affordability without compromising quality. 
+            By collaborating with other esteemed skincare brands, we bring you their renowned products at a more 
+            accessible price point, ensuring that luxury skincare is within everyone's reach.</p>
+        </div>
+    </div>
+
+    <!----------- Brands ----------->
+    <div class="brands-container">
+        <p id="brand1-text">ASIA</p>
+    </div>    
+    <!----------- Sign up ----------->
+    <div id="signupModal" class="modal">
+        <span onclick="document.getElementById('signupModal').style.display='none'" class="close" title="Exit Form">&times;</span>
+        <form class="modal-content" onsubmit="submitForm(); return false;">
+            <div class="container">
+                <h1>Welcome to GUINEA+LAB</h1>
+                <p>Sign in or register with your social media account.</p>
+                <hr>
     
-</body>
+                <!-- Social Media Login Buttons -->
+                <div class="social-login">
+                    <a href="#" class="fb btn">
+                        <i class="fa fa-facebook fa-fw"></i> Continue with Facebook
+                    </a>
+                    <a href="#" class="twitter btn">
+                        <i class="fa fa-twitter fa-fw"></i> Continue with Twitter
+                    </a>
+                    <a href="#" class="google btn">
+                        <i class="fa fa-google fa-fw"></i> Continue with Google+
+                    </a>
+                </div>
+    
+                <!-- Or Separator -->
+                <div class="vl">
+                    <div class="vl-innertext">OR</div>
+                </div>
+    
+                <!-- Email/Password Form -->
+                <div class="form-container">
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                </div>
+    
+                <p>By creating an account you agree to our <a href="https://help.shopee.sg/portal/article/77149" target="_blank" style="color: dodgerblue">Terms & Privacy</a>.</p>
+    
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('signupModal').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">SIGN UP</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    </body>
 </html>

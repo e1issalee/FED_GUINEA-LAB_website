@@ -1,0 +1,262 @@
+body {
+    font-family: 'Heebo', sans-serif;
+    margin: 0;
+    padding: 0; 
+    background-color: whitesmoke;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* -------------------------- Navigation Bar --------------------------*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(213, 233, 246);
+    width: 98%;
+    padding: 35px;
+    position: fixed; /* Set relative positioning on the navbar */
+    z-index: 1000;
+    margin-top: -15px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 15px;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid #555;
+}
+
+.navbar a:nth-child(1) { /* SEARCH */
+    margin-top: 5px;
+}
+
+.navbar input.search-input {
+    background-color: transparent;
+    border: none;
+    font-family: 'Heebo', sans-serif;
+    outline: none;
+    width: 60px;
+}
+
+.navbar input.search-input::placeholder {
+    color: black;
+    font-size: 16px;
+}
+
+.navbar input.search-input:focus {
+    background-color: transparent; /* Set the background color to transparent when focused */
+}
+
+.navbar a:nth-child(4) {    /* GUINEA+LAB */
+    font-size: 25px;
+    padding: 5px 10px;
+    border: 2px solid #555;
+    text-align: center; /* Use text-align to center the element */
+}
+
+.navbar a:nth-child(3){     /* BRANDS */
+    border-bottom: 2px solid #555;
+} 
+
+.navbar a:nth-child(2), /* SKINCARE */
+.navbar a:nth-child(5), /* ABOUT US */
+.navbar a:nth-child(6), /* GAMES */
+.navbar a:nth-child(7) { /* CONTACT US */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.navbar button.login-button {
+    position: absolute;
+    display: flex;
+    align-items: flex-start; /* Align items to the start of the flex container (top) */
+    margin-top: 40px;
+    margin-left: 1200px;
+    border: none; /* Remove the border from the button */
+    background: transparent; /* Set the background to transparent */
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.navbar button.login-button .icon {
+    margin-right: 25px;
+    margin-left: -10px;
+    margin-top: 11px;
+    font-size: 13px;
+}
+
+.navbar button.login-button .login-text {
+    white-space: nowrap;
+    font-size: 10px;
+    margin-top: 11px;
+    margin-left: -20px;
+    text-align: left;
+    color: black
+}
+
+.navbar button.login-button:hover .icon,
+.navbar button.login-button:hover .login-text {
+    font-weight: bolder ;
+}
+
+.navbar a.cart-link {
+    position: absolute;
+    display: flex;
+    align-items: flex-start; /* Align items to the start of the flex container (top) */
+    margin-top: 42px;
+    margin-left: 1260px;
+    border-bottom: transparent;
+    font-size: 13px;
+    color: #555;
+}
+
+.navbar a.cart-link .fa {
+    margin-left: 30px;
+    margin-top: 5px; 
+}
+
+/* -------------------------- About Us Popup --------------------------*/
+#aboutUsModal {
+    margin-top: 50px;
+}
+
+#aboutUsModal p {
+    width: 90%;
+    margin: 25px auto 0; 
+}
+
+.highlight-text {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+
+/* -------------------------- Modal Styles --------------------------*/
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 650px;
+    height: 65%;
+    border-radius: 30px;
+}
+
+.close {
+    color: #aaa;
+    margin-left: 1400px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.container {
+    padding: 16px;
+}
+
+button.cancelbtn, button.signupbtn {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    opacity: 2;
+}
+
+
+button.cancelbtn:hover, button.signupbtn:hover {
+    opacity: 10;
+    background-color: rgba(255, 222, 227, 0.789);
+}
+
+.social-login {
+    text-align: center;
+}
+
+.social-login a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+}
+
+.social-login .fb { background-color: #3b5998; }
+.social-login .twitter { background-color: #55acee; }
+.social-login .google { background-color: #dd4b39; }
+
+.vl {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #ddd;
+    margin-top: -150px;
+    margin-left: 10px;
+    height: 135px;
+}
+
+.vl-innertext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 222, 227, 0.789);
+    padding: 7px; /* Adjust padding as needed */
+    color: #555;
+    border-radius: 50%; /* Make it a circle */
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items horizontally */
+    margin-top: -160px; 
+    margin-left: 365px;
+}
+
+.form-container input {
+    width: 230px;
+    padding: 10px;
+    margin-bottom: 15px; /* Add space between input elements */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
